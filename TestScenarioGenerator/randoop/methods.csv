@@ -1,0 +1,5 @@
+cons : stack.util.Stack.<init>()
+method : stack.util.Stack.pop()
+method : stack.util.Stack.push(java.lang.Object)
+method : stack.util.Vector.add(java.lang.Object)
+method : stack.util.Vector.add(java.lang.Object)

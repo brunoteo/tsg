@@ -1,0 +1,125 @@
+package tsg.generator;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
+import tsg.execution.InternalClassloader;
+import tsg.logging.Logger;
+import tsg.option.Options;
+
+public class MethodFileGenerator {
+	
+	private static final Logger logger = new Logger(MethodFileGenerator.class);
+	
+	private final ClassLoader classLoader;
+	private static MethodFileGenerator instance;
+	
+	private List<String> methodsList;
+	private List<String> constructorList;
+	
+	//FIXME cambiare in methods.csv non appena risolvo il problema dei parametri
+	private String outputFile = Options.I().getRandoopDir() + "method.csv";
+	
+	private MethodFileGenerator() throws Exception {
+		InternalClassloader ic = new InternalClassloader(Options.I().getOutputDir());
+		this.classLoader = ic.getClassLoader();
+		methodsList = new ArrayList<String>();
+		constructorList = new ArrayList<String>();
+	}
+	
+	public static MethodFileGenerator getInstance() throws Exception {
+		if (instance == null) {
+			instance = new MethodFileGenerator();
+		}
+		return instance;
+	}
+	
+	public void generateMethods() throws Exception {
+		Class<?> c;
+		String methodStr;
+		String constructorStr;
+		String targetClass = Options.I().getTargetClass();
+		//TODO fare un utility
+		targetClass = targetClass.replaceAll(Options.I().getSourcepath(), "").replaceAll(".java", "").replaceAll("/", ".");
+		logger.info("Generating methods.csv for Randoop");
+		logger.debug("Class to be invetigated: " + targetClass);
+		
+		try {
+			c = Class.forName(targetClass, false, classLoader);
+		} catch (ClassNotFoundException e) {
+			throw new Exception("Target class not found");
+		}
+		
+		Constructor[] constructors = c.getDeclaredConstructors();
+		for(Constructor constructor : constructors) {
+			constructorStr = constructor.toGenericString();
+			constructorList.add(constructorStr.substring(constructorStr.indexOf(constructor.getName())));
+		}
+		logger.debug("Found: " + constructorList.size() + " constructors");
+		
+		for(Method method : c.getMethods()) {
+			if (!method.getDeclaringClass().equals(Class.class) &&
+					!method.getDeclaringClass().equals(Object.class) &&
+					!method.isBridge() &&
+					!method.isSynthetic()) {
+					//TODO fare un utility
+					methodStr = method.toGenericString();
+					methodStr = methodStr.substring(methodStr.indexOf(method.getDeclaringClass().toString().split(" ")[1]));
+					//FIXME trasformare i parametri Generics (E, T, ecc..) in java.lang.Object
+					methodsList.add(methodStr);
+				}
+		}
+		logger.debug("Found: " + methodsList.size() + " methods");
+	}
+	
+	public void removePureMethods(List<String> pureMethods) {
+		logger.debug("Remove pure methods");
+		
+		for(String pureMethod : pureMethods) {
+			if (!pureMethod.equals(Options.I().getMethodUnderTest())) {
+				methodsList.remove(pureMethod);
+			}
+			
+		}
+		logger.debug("Found: " + methodsList.size() + " non-pure methods");
+		//TODO eliminare i metodi non puri che non ci piacciono
+	}
+	
+	public void createMethodsFile() {
+		//FIXME vedere di mettere il file in qualche cartella
+		logger.debug("Create methods.csv");
+		FileWriter fw = null;
+		
+		try {
+			fw = new FileWriter(outputFile);
+			//TODO i costruttori devono avere <init>
+			for(String constructor : constructorList) {
+				fw.append("cons : " + constructor);
+				fw.append('\n');
+			}
+			for(String method : methodsList) {
+				fw.append("method : " + method);
+				fw.append('\n');
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (fw != null) {
+				try {
+					fw.flush();
+					fw.close();
+					logger.info("Generated file methods.csv - Done");
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	
+
+}

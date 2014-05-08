@@ -1,0 +1,7 @@
+./binary/javai-reim /home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/*.java -d /home/matteo/type-inference-0.1.3/Stack-UseCase/bin/
+
+java -Xbootclasspath/p:./binary/jsr308-all.jar: -ea:com.sun.tools...  -Xmx2048m  checkers.inference.InferenceMain  -classpath '.' 'Stack.java' 'Vector.java' 'Collections.java' '-d' '/home/matteo/type-inference-0.1.3/Stack-UseCase/bin'  -processor checkers.inference.reim.ReimChecker 
+
+VEDERE SOURCEPATH
+
+./binary/javai-reim -d /home/matteo/type-inference-0.1.3/Stack-UseCase/bin/ -sourcepath /home/matteo/type-inference-0.1.3/Stack-UseCase/src/ /home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java /home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java /home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java /home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java

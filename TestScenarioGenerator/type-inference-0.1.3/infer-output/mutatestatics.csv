@@ -1,0 +1,1 @@
+stack.util.Vector.Vector(java.util.Collection<? extends E>):@checkers.inference.reim.quals.Mutable

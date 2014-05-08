@@ -1,0 +1,28 @@
+EMP-0: (2):RET_Date():{}<init>() DateCell.java:3(1):THIS_Date():{@Mutable @Polyread @Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-1: (6):RET_setHours(int):{}setHours([DateCell.java:5(7):VAR_hours:{@Readonly}]) DateCell.java:5(5):THIS_setHours(int):{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-2: DateCell.java:5(8):VAR_this:{@Readonly}
+EQU-3: DateCell.java:6(11):EXP_this:{@Readonly}  ==  DateCell.java:5(5):THIS_setHours(int):{@Readonly}
+EQU-4: DateCell.java:6(11):EXP_this:{@Readonly}  ==  13:#CONSTANT#:{@Mutable}
+EMP-5: (16):RET_DateCell():{}<init>() DateCell.java:10(15):THIS_DateCell():{@Mutable @Polyread @Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-6: DateCell.java:11(17):VAR_date:{@Readonly}
+EMP-7: DateCell.java:12(20):RET_getDate():{@Polyread @Readonly}getDate() DateCell.java:12(19):THIS_getDate():{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-8: DateCell.java:12(21):VAR_this:{@Readonly}
+EQU-9: DateCell.java:13(23):EXP_this:{@Readonly}  ==  DateCell.java:12(19):THIS_getDate():{@Readonly}
+SUB-10: (DateCell.java:13(23):EXP_this:{@Readonly} =f=> DateCell.java:11(17):VAR_date:{@Readonly})  <:  DateCell.java:13(22):EXP_this.date:{@Mutable @Polyread @Readonly}
+SUB-11: DateCell.java:13(22):EXP_this.date:{@Mutable @Polyread @Readonly}  <:  DateCell.java:12(20):RET_getDate():{@Polyread @Readonly}
+EMP-12: (27):RET_cellSetHours():{}cellSetHours() DateCell.java:15(26):THIS_cellSetHours():{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-13: DateCell.java:15(28):VAR_this:{@Readonly}
+SUB-14: DateCell.java:16(30):EXP_this.getDate():{@Mutable @Polyread @Readonly}  <:  DateCell.java:16(29):VAR_md:{@Readonly}
+SUB-15: DateCell.java:15(26):THIS_cellSetHours():{@Readonly}  <:  (DateCell.java:16(30):EXP_this.getDate():{@Mutable @Polyread @Readonly} =m=> DateCell.java:12(19):THIS_getDate():{@Readonly})
+SUB-16: (DateCell.java:16(30):EXP_this.getDate():{@Mutable @Polyread @Readonly} =m=> DateCell.java:12(20):RET_getDate():{@Polyread @Readonly})  <:  DateCell.java:16(30):EXP_this.getDate():{@Mutable @Polyread @Readonly}
+SUB-17: (27):RET_cellSetHours():{}cellSetHours() DateCell.java:15(26):THIS_cellSetHours():{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}  <:  DateCell.java:12(20):RET_getDate():{@Polyread @Readonly}getDate() DateCell.java:12(19):THIS_getDate():{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EQU-18: DateCell.java:17(33):EXP_md:{@Readonly}  ==  DateCell.java:16(29):VAR_md:{@Readonly}
+SUB-19: DateCell.java:17(33):EXP_md:{@Readonly}  <:  DateCell.java:5(5):THIS_setHours(int):{@Readonly}
+SUB-20: (27):RET_cellSetHours():{}cellSetHours() DateCell.java:15(26):THIS_cellSetHours():{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}  <:  (6):RET_setHours(int):{}setHours([DateCell.java:5(7):VAR_hours:{@Readonly}]) DateCell.java:5(5):THIS_setHours(int):{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-21: (37):RET_Main():{}<init>() DateCell.java:21(36):THIS_Main():{@Mutable @Polyread @Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-22: (40):RET_main(java.lang.String[]):{}main([DateCell.java:22(41):VAR_args:{@Mutable @Polyread @Readonly}[DateCell.java:22(42):#INTERNAL#:{@Readonly}]]) DateCell.java:22(39):THIS_main(java.lang.String[]):{@Mutable @Polyread @Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+EMP-23: DateCell.java:22(41):VAR_args:{@Mutable @Polyread @Readonly}[DateCell.java:22(42):#INTERNAL#:{@Readonly}]
+SUB-24: DateCell.java:23(43):EXP_new DateCell():{@Mutable @Polyread @Readonly}  <:  (DateCell.java:23(43):EXP_new DateCell():{@Mutable @Polyread @Readonly} =m=> DateCell.java:10(15):THIS_DateCell():{@Mutable @Polyread @Readonly})
+SUB-25: (40):RET_main(java.lang.String[]):{}main([DateCell.java:22(41):VAR_args:{@Mutable @Polyread @Readonly}[DateCell.java:22(42):#INTERNAL#:{@Readonly}]]) DateCell.java:22(39):THIS_main(java.lang.String[]):{@Mutable @Polyread @Readonly} mutateStatic: {@Mutable @Polyread @Readonly}  <:  (16):RET_DateCell():{}<init>() DateCell.java:10(15):THIS_DateCell():{@Mutable @Polyread @Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
+SUB-26: DateCell.java:23(43):EXP_new DateCell():{@Mutable @Polyread @Readonly}  <:  DateCell.java:15(26):THIS_cellSetHours():{@Readonly}
+SUB-27: (40):RET_main(java.lang.String[]):{}main([DateCell.java:22(41):VAR_args:{@Mutable @Polyread @Readonly}[DateCell.java:22(42):#INTERNAL#:{@Readonly}]]) DateCell.java:22(39):THIS_main(java.lang.String[]):{@Mutable @Polyread @Readonly} mutateStatic: {@Mutable @Polyread @Readonly}  <:  (27):RET_cellSetHours():{}cellSetHours() DateCell.java:15(26):THIS_cellSetHours():{@Readonly} mutateStatic: {@Mutable @Polyread @Readonly}
