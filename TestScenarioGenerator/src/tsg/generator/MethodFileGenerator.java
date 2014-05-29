@@ -21,8 +21,7 @@ public class MethodFileGenerator {
 	private List<String> methodsList;
 	private List<String> constructorList;
 	
-	//FIXME cambiare in methods.csv non appena risolvo il problema dei parametri
-	private String outputFile = Options.I().getRandoopDir() + "method.csv";
+	private String outputFile = Options.I().getRandoopDir() + "methods.csv";
 	
 	private MethodFileGenerator() throws Exception {
 		InternalClassloader ic = new InternalClassloader(Options.I().getOutputDir());
@@ -67,9 +66,8 @@ public class MethodFileGenerator {
 					!method.isBridge() &&
 					!method.isSynthetic()) {
 					//TODO fare un utility
-					methodStr = method.toGenericString();
+					methodStr = method.toString();
 					methodStr = methodStr.substring(methodStr.indexOf(method.getDeclaringClass().toString().split(" ")[1]));
-					//FIXME trasformare i parametri Generics (E, T, ecc..) in java.lang.Object
 					methodsList.add(methodStr);
 				}
 		}
@@ -79,6 +77,7 @@ public class MethodFileGenerator {
 	public void removePureMethods(List<String> pureMethods) {
 		logger.debug("Remove pure methods");
 		
+		//FIXME non eliminare il method under test!
 		for(String pureMethod : pureMethods) {
 			if (!pureMethod.equals(Options.I().getMethodUnderTest())) {
 				methodsList.remove(pureMethod);
@@ -90,15 +89,14 @@ public class MethodFileGenerator {
 	}
 	
 	public void createMethodsFile() {
-		//FIXME vedere di mettere il file in qualche cartella
 		logger.debug("Create methods.csv");
 		FileWriter fw = null;
 		
 		try {
 			fw = new FileWriter(outputFile);
-			//TODO i costruttori devono avere <init>
+
 			for(String constructor : constructorList) {
-				fw.append("cons : " + constructor);
+				fw.append("cons : " + constructor.substring(0, constructor.indexOf("(")) + ".<init>" + constructor.substring(constructor.indexOf("(")));
 				fw.append('\n');
 			}
 			for(String method : methodsList) {

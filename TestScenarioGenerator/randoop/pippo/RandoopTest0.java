@@ -594,6 +594,33 @@ public class RandoopTest0 extends TestCase {
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
     Object obj0 = stack0.pop();
+    boolean b1 = stack0.add((Object)10);
+    Object obj1 = stack0.push((Object)0);
+    Object obj2 = stack0.pop();
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b1 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj2 + "' != '" + 0+ "'", obj2.equals(0));
+  }
+
+  public void test22() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test23");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)0);
+    Object obj0 = stack0.pop();
     Object obj1 = stack0.push((Object)100);
     boolean b1 = stack0.add((Object)10);
     boolean b2 = stack0.add((Object)1);
@@ -614,9 +641,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
   }
 
-  public void test22() throws Throwable {
+  public void test23() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test23");
+    if(debug) System.out.println("%nRandoopTest0.test24");
 
     Stack stack0 = new Stack();
     Object obj0 = stack0.push((Object)(-1));
@@ -641,9 +668,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
   }
 
-  public void test23() throws Throwable {
+  public void test24() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test24");
+    if(debug) System.out.println("%nRandoopTest0.test25");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -672,9 +699,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
   }
 
-  public void test24() throws Throwable {
+  public void test25() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test25");
+    if(debug) System.out.println("%nRandoopTest0.test26");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -699,9 +726,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
   }
 
-  public void test25() throws Throwable {
+  public void test26() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test26");
+    if(debug) System.out.println("%nRandoopTest0.test27");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)1);
@@ -723,9 +750,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
   }
 
-  public void test26() throws Throwable {
+  public void test27() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test27");
+    if(debug) System.out.println("%nRandoopTest0.test28");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -755,9 +782,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj2 + "' != '" + 100+ "'", obj2.equals(100));
   }
 
-  public void test27() throws Throwable {
+  public void test28() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test28");
+    if(debug) System.out.println("%nRandoopTest0.test29");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -782,9 +809,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b3 == true);
   }
 
-  public void test28() throws Throwable {
+  public void test29() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test29");
+    if(debug) System.out.println("%nRandoopTest0.test30");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -809,9 +836,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
   }
 
-  public void test29() throws Throwable {
+  public void test30() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test30");
+    if(debug) System.out.println("%nRandoopTest0.test31");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)1);
@@ -840,9 +867,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj4 + "' != '" + 0+ "'", obj4.equals(0));
   }
 
-  public void test30() throws Throwable {
+  public void test31() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test31");
+    if(debug) System.out.println("%nRandoopTest0.test32");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -867,9 +894,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
   }
 
-  public void test31() throws Throwable {
+  public void test32() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test32");
+    if(debug) System.out.println("%nRandoopTest0.test33");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)10);
@@ -898,9 +925,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj4 + "' != '" + 100+ "'", obj4.equals(100));
   }
 
-  public void test32() throws Throwable {
+  public void test33() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test33");
+    if(debug) System.out.println("%nRandoopTest0.test34");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -925,9 +952,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
   }
 
-  public void test33() throws Throwable {
+  public void test34() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test34");
+    if(debug) System.out.println("%nRandoopTest0.test35");
 
     Stack stack0 = new Stack();
     Object obj0 = stack0.push((Object)(-1));
@@ -952,9 +979,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
   }
 
-  public void test34() throws Throwable {
+  public void test35() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test35");
+    if(debug) System.out.println("%nRandoopTest0.test36");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -979,9 +1006,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
   }
 
-  public void test35() throws Throwable {
+  public void test36() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test36");
+    if(debug) System.out.println("%nRandoopTest0.test37");
 
     Stack stack0 = new Stack();
     Object obj0 = stack0.push((Object)(-1));
@@ -1006,9 +1033,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj2 + "' != '" + 100+ "'", obj2.equals(100));
   }
 
-  public void test36() throws Throwable {
+  public void test37() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test37");
+    if(debug) System.out.println("%nRandoopTest0.test38");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -1033,9 +1060,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
   }
 
-  public void test37() throws Throwable {
+  public void test38() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test38");
+    if(debug) System.out.println("%nRandoopTest0.test39");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -1065,9 +1092,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
   }
 
-  public void test38() throws Throwable {
+  public void test39() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test39");
+    if(debug) System.out.println("%nRandoopTest0.test40");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -1096,9 +1123,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
   }
 
-  public void test39() throws Throwable {
+  public void test40() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test40");
+    if(debug) System.out.println("%nRandoopTest0.test41");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -1123,9 +1150,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
   }
 
-  public void test40() throws Throwable {
+  public void test41() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test41");
+    if(debug) System.out.println("%nRandoopTest0.test42");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)10);
@@ -1155,9 +1182,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
   }
 
-  public void test41() throws Throwable {
+  public void test42() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test42");
+    if(debug) System.out.println("%nRandoopTest0.test43");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)1);
@@ -1186,9 +1213,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
   }
 
-  public void test42() throws Throwable {
+  public void test43() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test43");
+    if(debug) System.out.println("%nRandoopTest0.test44");
 
     Stack stack0 = new Stack();
     Object obj0 = stack0.push((Object)(-1));
@@ -1213,9 +1240,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
   }
 
-  public void test43() throws Throwable {
+  public void test44() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test44");
+    if(debug) System.out.println("%nRandoopTest0.test45");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)10);
@@ -1244,9 +1271,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj3 + "' != '" + 100+ "'", obj3.equals(100));
   }
 
-  public void test44() throws Throwable {
+  public void test45() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test45");
+    if(debug) System.out.println("%nRandoopTest0.test46");
 
     Stack stack0 = new Stack();
     Object obj0 = stack0.push((Object)(-1));
@@ -1276,9 +1303,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
   }
 
-  public void test45() throws Throwable {
+  public void test46() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test46");
+    if(debug) System.out.println("%nRandoopTest0.test47");
 
     Stack stack0 = new Stack();
     Object obj0 = stack0.push((Object)(-1));
@@ -1303,9 +1330,36 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj4 + "' != '" + 0+ "'", obj4.equals(0));
   }
 
-  public void test46() throws Throwable {
+  public void test47() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test47");
+    if(debug) System.out.println("%nRandoopTest0.test48");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)1);
+    Object obj0 = stack0.pop();
+    Object obj1 = stack0.push((Object)10);
+    Object obj2 = stack0.pop();
+    boolean b1 = stack0.add((Object)0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b1 == true);
+  }
+
+  public void test48() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test49");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -1330,9 +1384,9 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
   }
 
-  public void test47() throws Throwable {
+  public void test49() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test48");
+    if(debug) System.out.println("%nRandoopTest0.test50");
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)0);
@@ -1359,60 +1413,6 @@ public class RandoopTest0 extends TestCase {
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue("'" + obj3 + "' != '" + 100+ "'", obj3.equals(100));
-  }
-
-  public void test48() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test49");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)1);
-    Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)0);
-    boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-  }
-
-  public void test49() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test50");
-
-    Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)(-1));
-    Object obj1 = stack0.pop();
-    boolean b1 = stack0.add((Object)100);
-    Object obj2 = stack0.push((Object)10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
   }
 
 
