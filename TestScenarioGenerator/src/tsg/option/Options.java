@@ -39,6 +39,11 @@ public class Options {
 			required = true)
 	private String outputDir;
 	
+	@Option(name = "-blackList",
+			usage = "List of methods to ignore",
+			required = true)
+	private String blackList;
+	
 	@Option(name = "-type_inference",
 			usage = "Path to type-inference")
 	private String typeInferenceDir = "type-inference-0.1.3/";
@@ -65,6 +70,10 @@ public class Options {
 	
 	public String getOutputDir() {
 		return outputDir;
+	}
+
+	public String getBlackList() {
+		return blackList;
 	}
 
 	public String getTypeInferencePath() {
@@ -95,6 +104,10 @@ public class Options {
 		this.outputDir = outputDir;
 	}
 	
+	public void setBlackList(String blackList) {
+		this.blackList = blackList;
+	}
+
 	public void setTypeInferencePath(String typeInferenceDir) {
 		this.typeInferenceDir = typeInferenceDir;
 	}

@@ -20,6 +20,7 @@ public class MethodFileGenerator {
 	
 	private List<String> methodsList;
 	private List<String> constructorList;
+	private List<String> blackList;
 	
 	private String outputFile = Options.I().getRandoopDir() + "methods.csv";
 	
@@ -47,6 +48,9 @@ public class MethodFileGenerator {
 		logger.info("Generating methods.csv for Randoop");
 		logger.debug("Class to be invetigated: " + targetClass);
 		
+		
+		//TODO leggere la blackList e caricarli nell'arrayList
+		
 		try {
 			c = Class.forName(targetClass, false, classLoader);
 		} catch (ClassNotFoundException e) {
@@ -64,7 +68,9 @@ public class MethodFileGenerator {
 			if (!method.getDeclaringClass().equals(Class.class) &&
 					!method.getDeclaringClass().equals(Object.class) &&
 					!method.isBridge() &&
-					!method.isSynthetic()) {
+					!method.isSynthetic() &&
+					!isBlacklist(method)) {
+							
 					//TODO fare un utility
 					methodStr = method.toString();
 					methodStr = methodStr.substring(methodStr.indexOf(method.getDeclaringClass().toString().split(" ")[1]));
@@ -77,7 +83,6 @@ public class MethodFileGenerator {
 	public void removePureMethods(List<String> pureMethods) {
 		logger.debug("Remove pure methods");
 		
-		//FIXME non eliminare il method under test!
 		for(String pureMethod : pureMethods) {
 			if (!pureMethod.equals(Options.I().getMethodUnderTest())) {
 				methodsList.remove(pureMethod);
@@ -117,6 +122,10 @@ public class MethodFileGenerator {
 				}
 			}
 		}
+	}
+	
+	private boolean isBlacklist(Method method) {
+		return false;
 	}
 	
 
