@@ -74,7 +74,6 @@ public class PureMethodGenerator {
 					e.printStackTrace();
 				}
 			}
-				
 		}
 	}
 	

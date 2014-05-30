@@ -1,5 +1,8 @@
 package tsg.generator;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
@@ -48,8 +51,7 @@ public class MethodFileGenerator {
 		logger.info("Generating methods.csv for Randoop");
 		logger.debug("Class to be invetigated: " + targetClass);
 		
-		
-		//TODO leggere la blackList e caricarli nell'arrayList
+		readBlackList();
 		
 		try {
 			c = Class.forName(targetClass, false, classLoader);
@@ -64,6 +66,7 @@ public class MethodFileGenerator {
 		}
 		logger.debug("Found: " + constructorList.size() + " constructors");
 		
+		//TODO eliminare i metodi blackList
 		for(Method method : c.getMethods()) {
 			if (!method.getDeclaringClass().equals(Class.class) &&
 					!method.getDeclaringClass().equals(Object.class) &&
@@ -126,6 +129,30 @@ public class MethodFileGenerator {
 	
 	private boolean isBlacklist(Method method) {
 		return false;
+	}
+	
+	private void readBlackList() {
+		BufferedReader br = null;
+		blackList = new ArrayList<String>();
+		String line;
+		try {
+			br = new BufferedReader(new FileReader(Options.I().getBlackList()));
+			while((line = br.readLine()) != null) {
+				blackList.add(line);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 	
 
