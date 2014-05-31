@@ -1,4 +1,5 @@
 import java.lang.Object;
+import java.util.Collection;
 import stack.util.Stack;
 import stack.util.Vector;
 
@@ -13,7 +14,218 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test1");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      Object obj0 = stack0.set((-1), (Object)1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+  }
+
+  public void test1() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test2");
+
+    Stack stack0 = new Stack();
+    Stack stack1 = new Stack();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      boolean b0 = stack0.addAll(1, (Collection)stack1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+  }
+
+  public void test2() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test3");
+
+    Stack stack0 = new Stack();
+    Stack stack1 = new Stack();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      boolean b0 = stack0.addAll((-1), (Collection)stack1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+  }
+
+  public void test3() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test4");
+
+    Stack stack0 = new Stack();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.add(100, (Object)1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+  }
+
+  public void test4() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test5");
+
+    Stack stack0 = new Stack();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      Object obj0 = stack0.pop();
+      fail("Expected exception of type java.util.EmptyStackException");
+    } catch (java.util.EmptyStackException e) {
+      // Expected exception.
+    }
+  }
+
+  public void test5() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test6");
+
+    Stack stack0 = new Stack();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setElementAt((Object)10, 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+  }
+
+  public void test6() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test7");
+
+    Stack stack0 = new Stack();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.add(10, (Object)10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+  }
+
+  public void test7() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test8");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)10);
+    Object obj0 = stack0.pop();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.add(1, (Object)1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
+  }
+
+  public void test8() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test9");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    boolean b2 = stack0.add((Object)100);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      Object obj0 = stack0.set(10, (Object)1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b1 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b2 == true);
+  }
+
+  public void test9() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test10");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    boolean b2 = stack0.add((Object)100);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.insertElementAt((Object)(-1), 100);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b1 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b2 == true);
+  }
+
+  public void test10() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test11");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)10);
+    Object obj0 = stack0.pop();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      Object obj1 = stack0.set(10, (Object)10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
+  }
+
+  public void test11() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test12");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
@@ -29,190 +241,23 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
   }
 
-  public void test1() throws Throwable {
+  public void test12() throws Throwable {
 
-    if(debug) System.out.println("%nRandoopTest0.test2");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)0);
-    boolean b3 = stack0.add((Object)(-1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b3 == true);
-  }
-
-  public void test2() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test3");
+    if(debug) System.out.println("%nRandoopTest0.test13");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)100);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
-  }
-
-  public void test3() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test4");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)(-1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
-  }
-
-  public void test4() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test5");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)1);
-    Object obj1 = stack0.push((Object)100);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
-  }
-
-  public void test5() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test6");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.push((Object)1);
-    Object obj1 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    Object obj2 = stack0.pop();
-    Object obj3 = stack0.pop();
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 0+ "'", obj2.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
-  }
-
-  public void test6() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test7");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
     boolean b1 = stack0.add((Object)(-1));
-    boolean b2 = stack0.add((Object)1);
-    boolean b3 = stack0.add((Object)(-1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b3 == true);
-  }
-
-  public void test7() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test8");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    Object obj1 = stack0.pop();
+    Stack stack1 = new Stack();
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
     try {
-      Object obj2 = stack0.pop();
-      fail("Expected exception of type java.util.EmptyStackException");
-    } catch (java.util.EmptyStackException e) {
+      boolean b2 = stack0.addAll((-1), (Collection)stack1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
       // Expected exception.
     }
     
@@ -221,148 +266,7 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
-  }
-
-  public void test8() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test9");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)(-1));
-    boolean b2 = stack0.add((Object)1);
-    boolean b3 = stack0.add((Object)10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b3 == true);
-  }
-
-  public void test9() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test10");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)(-1));
-    boolean b2 = stack0.add((Object)1);
-    Object obj1 = stack0.push((Object)1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
-  }
-
-  public void test10() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test11");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)10);
-    Object obj2 = stack0.push((Object)10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
-  }
-
-  public void test11() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test12");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)1);
-    Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)10);
-    Object obj2 = stack0.push((Object)(-1));
-    Object obj3 = stack0.push((Object)0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
-  }
-
-  public void test12() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test13");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    boolean b2 = stack0.add((Object)10);
-    boolean b3 = stack0.add((Object)10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b3 == true);
   }
 
   public void test13() throws Throwable {
@@ -370,23 +274,16 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test14");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)10);
-    boolean b2 = stack0.add((Object)(-1));
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    boolean b2 = stack0.add((Object)100);
+    stack0.add(1, (Object)100);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b2 == true);
@@ -397,26 +294,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test15");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
     boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)1);
-    boolean b3 = stack0.add((Object)(-1));
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setElementAt((Object)100, 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b3 == true);
   }
 
   public void test15() throws Throwable {
@@ -424,23 +318,27 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test16");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    Object obj1 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    Object obj0 = stack0.pop();
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
     try {
-      Object obj2 = stack0.pop();
-      fail("Expected exception of type java.util.EmptyStackException");
-    } catch (java.util.EmptyStackException e) {
+      stack0.setElementAt((Object)(-1), 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
       // Expected exception.
     }
     
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
+    assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
+    assertTrue(b1 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
   }
 
   public void test16() throws Throwable {
@@ -448,17 +346,14 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test17");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    boolean b2 = stack0.add((Object)100);
     Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)0);
-    boolean b3 = stack0.add((Object)0);
+    stack0.setSize(10);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
@@ -467,7 +362,7 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b2 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b3 == true);
+    assertTrue("'" + obj0 + "' != '" + 100+ "'", obj0.equals(100));
   }
 
   public void test17() throws Throwable {
@@ -475,26 +370,16 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test18");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)1);
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.pop();
-    Object obj2 = stack0.push((Object)(-1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
+    boolean b0 = stack0.add((Object)10);
+    stack0.add(0, (Object)0);
+    stack0.addElement((Object)10);
+    boolean b1 = stack0.add((Object)10);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
   }
 
   public void test18() throws Throwable {
@@ -502,16 +387,14 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test19");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)1);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)10);
-    Object obj2 = stack0.pop();
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
     try {
-      Object obj3 = stack0.pop();
-      fail("Expected exception of type java.util.EmptyStackException");
-    } catch (java.util.EmptyStackException e) {
+      Object obj1 = stack0.set(0, (Object)0);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
       // Expected exception.
     }
     
@@ -520,13 +403,7 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
   }
 
   public void test19() throws Throwable {
@@ -534,30 +411,20 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test20");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
     boolean b1 = stack0.add((Object)(-1));
-    Object obj1 = stack0.pop();
-    boolean b2 = stack0.add((Object)(-1));
-    Object obj2 = stack0.pop();
+    Object obj0 = stack0.pop();
+    stack0.setSize(100);
+    stack0.setSize(0);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
+    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
   }
 
   public void test20() throws Throwable {
@@ -565,26 +432,27 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test21");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)1);
-    Object obj1 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    Object obj2 = stack0.push((Object)1);
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    Object obj0 = stack0.pop();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.insertElementAt((Object)0, 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
     
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 1+ "'", obj2.equals(1));
+    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
   }
 
   public void test21() throws Throwable {
@@ -592,26 +460,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test22");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    Object obj1 = stack0.push((Object)0);
-    Object obj2 = stack0.pop();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setElementAt((Object)1, 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 0+ "'", obj2.equals(0));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
   }
 
   public void test22() throws Throwable {
@@ -619,26 +484,20 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test23");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)100);
-    boolean b1 = stack0.add((Object)10);
-    boolean b2 = stack0.add((Object)1);
+    boolean b0 = stack0.add((Object)10);
+    stack0.addElement((Object)0);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setSize((-1));
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
   }
 
   public void test23() throws Throwable {
@@ -646,26 +505,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test24");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)1);
-    Object obj1 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
     boolean b1 = stack0.add((Object)0);
-    boolean b2 = stack0.add((Object)100);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setElementAt((Object)1, 100);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
     
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
   }
 
   public void test24() throws Throwable {
@@ -673,30 +529,26 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test25");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    Object obj1 = stack0.pop();
-    Object obj2 = stack0.push((Object)0);
-    Object obj3 = stack0.pop();
+    Object obj1 = stack0.push((Object)0);
+    Object obj2 = stack0.pop();
+    Object obj3 = stack0.push((Object)1);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
+    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue("'" + obj2 + "' != '" + 0+ "'", obj2.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
+    assertTrue("'" + obj3 + "' != '" + 1+ "'", obj3.equals(1));
   }
 
   public void test25() throws Throwable {
@@ -704,26 +556,14 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test26");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    Object obj1 = stack0.push((Object)0);
-    boolean b2 = stack0.add((Object)10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      Object obj0 = stack0.set(100, (Object)0);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
   }
 
   public void test26() throws Throwable {
@@ -731,23 +571,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test27");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)1);
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
     Object obj0 = stack0.pop();
-    // The following exception was thrown during execution.
-    // This behavior will recorded for regression testing.
-    try {
-      Object obj1 = stack0.pop();
-      fail("Expected exception of type java.util.EmptyStackException");
-    } catch (java.util.EmptyStackException e) {
-      // Expected exception.
-    }
-    
+    stack0.setSize(100);
+    boolean b2 = stack0.add((Object)0);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
+    assertTrue(b1 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b2 == true);
   }
 
   public void test27() throws Throwable {
@@ -755,31 +595,20 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test28");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)100);
-    Object obj2 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
+    stack0.addElement((Object)0);
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
     try {
-      Object obj3 = stack0.pop();
-      fail("Expected exception of type java.util.EmptyStackException");
-    } catch (java.util.EmptyStackException e) {
+      Object obj0 = stack0.set((-1), (Object)10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
       // Expected exception.
     }
     
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 100+ "'", obj2.equals(100));
   }
 
   public void test28() throws Throwable {
@@ -787,26 +616,14 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test29");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)(-1));
-    boolean b2 = stack0.add((Object)1);
-    boolean b3 = stack0.add((Object)100);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b3 == true);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setElementAt((Object)100, (-1));
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
   }
 
   public void test29() throws Throwable {
@@ -814,45 +631,17 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test30");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)1);
-    boolean b2 = stack0.add((Object)0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-  }
-
-  public void test30() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test31");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)1);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
     Object obj1 = stack0.push((Object)0);
     Object obj2 = stack0.push((Object)1);
-    Object obj3 = stack0.pop();
-    Object obj4 = stack0.pop();
+    boolean b1 = stack0.add((Object)(-1));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
@@ -861,10 +650,22 @@ public class RandoopTest0 extends TestCase {
     assertTrue("'" + obj2 + "' != '" + 1+ "'", obj2.equals(1));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 1+ "'", obj3.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj4 + "' != '" + 0+ "'", obj4.equals(0));
+    assertTrue(b1 == true);
+  }
+
+  public void test30() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test31");
+
+    Stack stack0 = new Stack();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setElementAt((Object)(-1), 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
   }
 
   public void test31() throws Throwable {
@@ -872,26 +673,20 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test32");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    boolean b2 = stack0.add((Object)(-1));
-    Object obj1 = stack0.push((Object)100);
+    boolean b0 = stack0.add((Object)10);
+    stack0.add(0, (Object)0);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.add((-1), (Object)1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
   }
 
   public void test32() throws Throwable {
@@ -900,29 +695,25 @@ public class RandoopTest0 extends TestCase {
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)10);
-    Object obj0 = stack0.push((Object)0);
+    boolean b1 = stack0.add((Object)(-1));
+    boolean b2 = stack0.add((Object)100);
+    Object obj0 = stack0.push((Object)(-1));
     Object obj1 = stack0.pop();
-    Object obj2 = stack0.pop();
-    Object obj3 = stack0.push((Object)100);
-    Object obj4 = stack0.pop();
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
+    assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
+    assertTrue(b2 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
+    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 100+ "'", obj3.equals(100));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj4 + "' != '" + 100+ "'", obj4.equals(100));
+    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
   }
 
   public void test33() throws Throwable {
@@ -930,26 +721,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test34");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    boolean b2 = stack0.add((Object)(-1));
-    Object obj1 = stack0.push((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    stack0.setSize(0);
+    Object obj1 = stack0.push((Object)1);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
+    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
   }
 
   public void test34() throws Throwable {
@@ -957,26 +745,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test35");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)1);
-    boolean b1 = stack0.add((Object)1);
-    Object obj1 = stack0.push((Object)(-1));
-    Object obj2 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)0);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.insertElementAt((Object)100, (-1));
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
     
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
   }
 
   public void test35() throws Throwable {
@@ -984,26 +769,16 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test36");
 
     Stack stack0 = new Stack();
+    Object obj0 = stack0.push((Object)0);
+    stack0.add(1, (Object)10);
+    stack0.setSize(100);
     boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)10);
-    boolean b2 = stack0.add((Object)(-1));
-    Object obj1 = stack0.push((Object)0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
+    assertTrue(b0 == true);
   }
 
   public void test36() throws Throwable {
@@ -1011,26 +786,27 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test37");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)1);
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.pop();
-    Object obj2 = stack0.push((Object)100);
+    boolean b0 = stack0.add((Object)10);
+    Object obj0 = stack0.pop();
+    Object obj1 = stack0.push((Object)10);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      Object obj2 = stack0.set(1, (Object)100);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
     
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 100+ "'", obj2.equals(100));
+    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
   }
 
   public void test37() throws Throwable {
@@ -1038,41 +814,14 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test38");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)100);
-    boolean b1 = stack0.add((Object)10);
-    boolean b2 = stack0.add((Object)0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
-  }
-
-  public void test38() throws Throwable {
-
-    if(debug) System.out.println("%nRandoopTest0.test39");
-
-    Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)(-1));
-    Object obj1 = stack0.pop();
+    Object obj1 = stack0.push((Object)0);
+    Object obj2 = stack0.pop();
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
     try {
-      Object obj2 = stack0.pop();
+      Object obj3 = stack0.pop();
       fail("Expected exception of type java.util.EmptyStackException");
     } catch (java.util.EmptyStackException e) {
       // Expected exception.
@@ -1083,13 +832,33 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
+    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
+    assertTrue("'" + obj2 + "' != '" + 0+ "'", obj2.equals(0));
+  }
+
+  public void test38() throws Throwable {
+
+    if(debug) System.out.println("%nRandoopTest0.test39");
+
+    Stack stack0 = new Stack();
+    boolean b0 = stack0.add((Object)10);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.insertElementAt((Object)100, 100);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
   }
 
   public void test39() throws Throwable {
@@ -1097,30 +866,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test40");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    boolean b2 = stack0.add((Object)100);
+    stack0.addElement((Object)0);
     Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)10);
-    Object obj2 = stack0.pop();
-    Object obj3 = stack0.pop();
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
+    assertTrue(b2 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
+    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
   }
 
   public void test40() throws Throwable {
@@ -1128,26 +890,14 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test41");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
-    Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)1);
-    boolean b2 = stack0.add((Object)(-1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.setElementAt((Object)10, 0);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
   }
 
   public void test41() throws Throwable {
@@ -1156,15 +906,13 @@ public class RandoopTest0 extends TestCase {
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)10);
-    Object obj0 = stack0.push((Object)0);
-    Object obj1 = stack0.pop();
-    Object obj2 = stack0.pop();
+    Object obj0 = stack0.pop();
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
     try {
-      Object obj3 = stack0.pop();
-      fail("Expected exception of type java.util.EmptyStackException");
-    } catch (java.util.EmptyStackException e) {
+      stack0.setElementAt((Object)10, 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
       // Expected exception.
     }
     
@@ -1173,13 +921,7 @@ public class RandoopTest0 extends TestCase {
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
   }
 
   public void test42() throws Throwable {
@@ -1187,30 +929,28 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test43");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)1);
-    Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)0);
-    boolean b1 = stack0.add((Object)0);
-    Object obj2 = stack0.pop();
-    Object obj3 = stack0.pop();
+    boolean b0 = stack0.add((Object)10);
+    Stack stack1 = new Stack();
+    boolean b1 = stack1.add((Object)10);
+    boolean b2 = stack1.add((Object)(-1));
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      boolean b3 = stack0.addAll((-1), (Collection)stack1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 0+ "'", obj2.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 0+ "'", obj3.equals(0));
+    assertTrue(b2 == true);
   }
 
   public void test43() throws Throwable {
@@ -1218,26 +958,15 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test44");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)1);
-    boolean b1 = stack0.add((Object)0);
-    Object obj1 = stack0.push((Object)(-1));
-    Object obj2 = stack0.pop();
+    Object obj0 = stack0.push((Object)0);
+    stack0.add(1, (Object)10);
+    Object obj1 = stack0.set(0, (Object)100);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
+    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
+    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
   }
 
   public void test44() throws Throwable {
@@ -1246,29 +975,25 @@ public class RandoopTest0 extends TestCase {
 
     Stack stack0 = new Stack();
     boolean b0 = stack0.add((Object)10);
-    Object obj0 = stack0.push((Object)0);
-    Object obj1 = stack0.pop();
-    Object obj2 = stack0.pop();
-    boolean b1 = stack0.add((Object)100);
-    Object obj3 = stack0.pop();
+    boolean b1 = stack0.add((Object)(-1));
+    boolean b2 = stack0.add((Object)100);
+    Object obj0 = stack0.pop();
+    boolean b3 = stack0.add((Object)1);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 100+ "'", obj3.equals(100));
+    assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + obj0 + "' != '" + 100+ "'", obj0.equals(100));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b3 == true);
   }
 
   public void test45() throws Throwable {
@@ -1276,31 +1001,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test46");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    boolean b0 = stack0.add((Object)1);
+    Object obj0 = stack0.push((Object)0);
     Object obj1 = stack0.pop();
-    Object obj2 = stack0.pop();
     // The following exception was thrown during execution.
     // This behavior will recorded for regression testing.
     try {
-      Object obj3 = stack0.pop();
-      fail("Expected exception of type java.util.EmptyStackException");
-    } catch (java.util.EmptyStackException e) {
+      stack0.add((-1), (Object)1);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
       // Expected exception.
     }
     
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
+    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b0 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + (-1)+ "'", obj2.equals((-1)));
+    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
   }
 
   public void test46() throws Throwable {
@@ -1308,26 +1025,27 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test47");
 
     Stack stack0 = new Stack();
-    Object obj0 = stack0.push((Object)(-1));
-    Object obj1 = stack0.pop();
-    Object obj2 = stack0.push((Object)0);
-    Object obj3 = stack0.push((Object)1);
-    Object obj4 = stack0.push((Object)0);
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
+    Object obj0 = stack0.pop();
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.add((-1), (Object)100);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b0 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + (-1)+ "'", obj1.equals((-1)));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 0+ "'", obj2.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 1+ "'", obj3.equals(1));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj4 + "' != '" + 0+ "'", obj4.equals(0));
   }
 
   public void test47() throws Throwable {
@@ -1335,26 +1053,27 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test48");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)1);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
     Object obj1 = stack0.push((Object)10);
-    Object obj2 = stack0.pop();
-    boolean b1 = stack0.add((Object)0);
+    // The following exception was thrown during execution.
+    // This behavior will recorded for regression testing.
+    try {
+      stack0.insertElementAt((Object)(-1), 10);
+      fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException");
+    } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+      // Expected exception.
+    }
+    
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 1+ "'", obj0.equals(1));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue("'" + obj1 + "' != '" + 10+ "'", obj1.equals(10));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
   }
 
   public void test48() throws Throwable {
@@ -1362,26 +1081,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test49");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
     Object obj0 = stack0.pop();
-    boolean b1 = stack0.add((Object)(-1));
-    Object obj1 = stack0.push((Object)100);
-    boolean b2 = stack0.add((Object)10);
+    Object obj1 = stack0.push((Object)0);
+    stack0.setSize(10);
+    Object obj2 = stack0.push((Object)100);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
+    assertTrue("'" + obj0 + "' != '" + 10+ "'", obj0.equals(10));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue(b1 == true);
+    assertTrue("'" + obj1 + "' != '" + 0+ "'", obj1.equals(0));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(b2 == true);
+    assertTrue("'" + obj2 + "' != '" + 100+ "'", obj2.equals(100));
   }
 
   public void test49() throws Throwable {
@@ -1389,30 +1105,23 @@ public class RandoopTest0 extends TestCase {
     if(debug) System.out.println("%nRandoopTest0.test50");
 
     Stack stack0 = new Stack();
-    boolean b0 = stack0.add((Object)0);
+    boolean b0 = stack0.add((Object)10);
+    boolean b1 = stack0.add((Object)(-1));
     Object obj0 = stack0.pop();
-    Object obj1 = stack0.push((Object)100);
-    boolean b1 = stack0.add((Object)10);
-    Object obj2 = stack0.pop();
-    Object obj3 = stack0.pop();
+    stack0.setSize(100);
+    Object obj1 = stack0.push((Object)1);
     
     // Regression assertion (captures the current behavior of the code)
     assertTrue(b0 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj0 + "' != '" + 0+ "'", obj0.equals(0));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj1 + "' != '" + 100+ "'", obj1.equals(100));
-    
-    // Regression assertion (captures the current behavior of the code)
     assertTrue(b1 == true);
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj2 + "' != '" + 10+ "'", obj2.equals(10));
+    assertTrue("'" + obj0 + "' != '" + (-1)+ "'", obj0.equals((-1)));
     
     // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + obj3 + "' != '" + 100+ "'", obj3.equals(100));
+    assertTrue("'" + obj1 + "' != '" + 1+ "'", obj1.equals(1));
   }
 
 

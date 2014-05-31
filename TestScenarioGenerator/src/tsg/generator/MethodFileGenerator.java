@@ -128,6 +128,11 @@ public class MethodFileGenerator {
 	}
 	
 	private boolean isBlacklist(Method method) {
+		for(String black : blackList) {
+			if (method.getName().contains(black)) {
+				return true;
+			}
+		}
 		return false;
 	}
 	
