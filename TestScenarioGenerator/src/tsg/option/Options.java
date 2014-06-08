@@ -15,9 +15,8 @@ public class Options {
 	}
 
 	@Option(name = "-sourcepath",
-			usage = "Sourcepath to classes",
-			required = true)
-	private String soucepath;
+			usage = "Sourcepath to classes")
+	private String soucepath = System.getProperty("user.dir") + "/" + "type-inference-0.1.3/Stack-UseCase/src";
 	
 	@Option(name = "-targetClass",
 			usage = "Target class",
@@ -35,14 +34,12 @@ public class Options {
 	private String classes;
 	
 	@Option(name = "-outputDir",
-			usage = "Output directory for binary",
-			required = true)
-	private String outputDir;
+			usage = "Output directory for binary")
+	private String outputDir = System.getProperty("user.dir") + "/" + "type-inference-0.1.3/Stack-UseCase/bin";
 	
 	@Option(name = "-blackList",
-			usage = "List of methods to ignore",
-			required = true)
-	private String blackList;
+			usage = "List of methods to ignore")
+	private String blackList = "blacklist.csv";
 	
 	@Option(name = "-type_inference",
 			usage = "Path to type-inference")

@@ -1,397 +1,397 @@
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	70	AbstractCollection()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	70	AbstractCollection()		void () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	80	iterator()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	80	iterator()		@Polyread Iterator<@Readonly E extends @Readonly Object> () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	82	size()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	82	size()		@Readonly int () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	89	isEmpty()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	89	isEmpty()		@Readonly boolean () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	102	contains(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	102	contains(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	102	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	103	e		@Readonly Iterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	138	toArray()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	138	toArray()		@Readonly Object @Polyread [] () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	140	r		@Mutable Object @Mutable []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	141	it		@Mutable Iterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	177	<T>toArray(T[])-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	177	<T>toArray(T[])		<[T extends Object]> @Mutable T extends @Mutable Object @Readonly [] ([@Mutable T extends @Mutable Object @Mutable []]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	177	a		@Mutable T extends @Mutable Object @Mutable []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	180	r		@Mutable T extends @Mutable Object @Mutable []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	183	it		@Mutable Iterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	<T>finishToArray(T[],java.util.Iterator<?>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	<T>finishToArray(T[],java.util.Iterator<?>)		<[T extends Object]> @Mutable T extends @Mutable Object @Polyread [] ([@Mutable T extends @Mutable Object @Mutable [], @Mutable Iterator<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	it		@Mutable Iterator<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	r		@Mutable T extends @Mutable Object @Mutable []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	241	add(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	241	add(E)		@Readonly boolean ([@Readonly E extends @Readonly Object]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	241	e		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	261	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	261	remove(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	261	remove(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	262	e		@Mutable Iterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	296	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	296	containsAll(java.util.Collection<?>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	296	containsAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	297	e		@Readonly Iterator<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	322	addAll(java.util.Collection<? extends E>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	322	addAll(java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	322	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	324	e		@Readonly Iterator<@Readonly ? extends @Readonly E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	353	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	353	removeAll(java.util.Collection<?>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	353	removeAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	355	e		@Mutable Iterator<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	386	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	386	retainAll(java.util.Collection<?>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	386	retainAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	388	e		@Mutable Iterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	413	clear()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	413	clear()		void () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	414	e		@Mutable Iterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	434	toString()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	434	toString()		@Readonly String () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	435	i		@Readonly Iterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	439	sb		@Mutable StringBuilder
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	442	e		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	81	stack.util.AbstractList		@Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	86	AbstractList()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	86	AbstractList()		void () @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	117	add(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	117	add(E)		@Readonly boolean ([@Readonly E extends @Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	117	e		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	127	get(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	127	get(int)		@Polyread E extends @Polyread Object ([@Readonly int]) @Readonly AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	141	element		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	141	set(int,E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	141	set(int,E)		@Readonly E extends @Readonly Object ([@Readonly int, @Readonly E extends @Readonly Object]) @Readonly AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	157	add(int,E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	157	add(int,E)		void ([@Readonly int, @Readonly E extends @Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	157	element		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	170	remove(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	170	remove(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	187	indexOf(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	187	indexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	187	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	188	e		@Readonly ListIterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	212	lastIndexOf(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	212	lastIndexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	212	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	213	e		@Readonly ListIterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	243	clear()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	243	clear()		void () @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	266	addAll(int,java.util.Collection<? extends E>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	266	addAll(int,java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly int, @Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	266	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	269	e		@Readonly Iterator<@Readonly ? extends @Readonly E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	298	iterator()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	298	iterator()		@Readonly Iterator<@Readonly E extends @Readonly Object> () @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	309	listIterator()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	309	listIterator()		@Readonly ListIterator<@Readonly E extends @Readonly Object> () @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	335	listIterator(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	335	listIterator(int)		@Polyread ListIterator<@Readonly E extends @Readonly Object> ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	341	stack.util.AbstractList.Itr		@Mutable Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	361	hasNext()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	361	hasNext()		@Readonly boolean () @Mutable Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	365	next()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	365	next()		@Polyread E extends @Polyread Object () @Mutable Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	369	next		@Polyread E extends @Polyread Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	373	e		@Readonly IndexOutOfBoundsException
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	379	remove()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	379	remove()		void () @Mutable Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	390	e		@Readonly IndexOutOfBoundsException
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	395	checkForComodification()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	395	checkForComodification()		void () @Readonly Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	402	ListItr(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	402	ListItr(int)		void ([@Readonly int]) @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	406	hasPrevious()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	406	hasPrevious()		@Readonly boolean () @Readonly ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	410	previous()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	410	previous()		@Readonly E extends @Readonly Object () @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	414	previous		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	417	e		@Readonly IndexOutOfBoundsException
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	423	nextIndex()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	423	nextIndex()		@Readonly int () @Readonly ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	427	previousIndex()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	427	previousIndex()		@Readonly int () @Readonly ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	431	e		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	431	set(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	431	set(E)		void ([@Readonly E extends @Readonly Object]) @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	439	ex		@Readonly IndexOutOfBoundsException
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	444	add(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	444	add(E)		void ([@Readonly E extends @Readonly Object]) @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	444	e		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	453	ex		@Readonly IndexOutOfBoundsException
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	494	subList(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	494	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	523	equals(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	523	equals(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	523	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	529	e1		@Readonly ListIterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	530	e2		@Readonly ListIterator<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	532	o1		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	533	o2		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	549	hashCode()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	549	hashCode()		@Readonly int () @Readonly AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	551	e		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	578	removeRange(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	578	removeRange(int,int)		void ([@Readonly int, @Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	579	it		@Mutable ListIterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	614	rangeCheckForAdd(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	614	rangeCheckForAdd(int)		void ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	619	outOfBoundsMsg(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	619	outOfBoundsMsg(int)		@Readonly String ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	625	l		@Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	629	SubList(stack.util.AbstractList<E>,int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	629	SubList(stack.util.AbstractList<E>,int,int)		void ([@Mutable AbstractList<@Readonly E extends @Readonly Object>, @Readonly int, @Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	629	list		@Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	643	element		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	643	set(int,E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	643	set(int,E)		@Readonly E extends @Readonly Object ([@Readonly int, @Readonly E extends @Readonly Object]) @Readonly SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	649	get(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	649	get(int)		@Polyread E extends @Polyread Object ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	655	size()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	655	size()		@Readonly int () @Readonly SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	660	add(int,E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	660	add(int,E)		void ([@Readonly int, @Readonly E extends @Readonly Object]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	660	element		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	668	remove(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	668	remove(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	671	result		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	677	removeRange(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	677	removeRange(int,int)		void ([@Readonly int, @Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	684	addAll(java.util.Collection<? extends E>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	684	addAll(java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	684	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	688	addAll(int,java.util.Collection<? extends E>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	688	addAll(int,java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly int, @Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	688	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	701	iterator()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	701	iterator()		@Readonly Iterator<@Readonly E extends @Readonly Object> () @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	705	listIterator(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	705	listIterator(int)		@Polyread ListIterator<@Readonly E extends @Readonly Object> ([@Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	709	<anonymous stack.util.SubList$1>		@Mutable Object & @Mutable ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	710	i		@Mutable ListIterator<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	712	hasNext()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	712	hasNext()		@Readonly boolean () @Readonly Object & @Readonly ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	716	next()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	716	next()		@Polyread E extends @Polyread Object () @Readonly Object & @Readonly ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	723	hasPrevious()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	723	hasPrevious()		@Readonly boolean () @Readonly Object & @Readonly ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	727	previous()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	727	previous()		@Readonly E extends @Readonly Object () @Readonly Object & @Readonly ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	734	nextIndex()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	734	nextIndex()		@Readonly int () @Readonly Object & @Readonly ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	738	previousIndex()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	738	previousIndex()		@Readonly int () @Readonly Object & @Readonly ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	742	remove()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	742	remove()		void () @Mutable Object & @Mutable ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	748	e		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	748	set(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	748	set(E)		void ([@Mutable E extends @Mutable Object]) @Mutable Object & @Mutable ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	752	add(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	752	add(E)		void ([@Mutable E extends @Mutable Object]) @Mutable Object & @Mutable ListIterator<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	752	e		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	760	subList(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	760	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	764	rangeCheck(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	764	rangeCheck(int)		void ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	769	rangeCheckForAdd(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	769	rangeCheckForAdd(int)		void ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	774	outOfBoundsMsg(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	774	outOfBoundsMsg(int)		@Readonly String ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	778	checkForComodification()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	778	checkForComodification()		void () @Readonly SubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	785	RandomAccessSubList(stack.util.AbstractList<E>,int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	785	RandomAccessSubList(stack.util.AbstractList<E>,int,int)		void ([@Mutable AbstractList<@Readonly E extends @Readonly Object>, @Readonly int, @Readonly int]) @Mutable RandomAccessSubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	785	list		@Mutable AbstractList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	789	subList(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	789	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Mutable RandomAccessSubList<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	<T>synchronizedList(java.util.List<T>,java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	<T>synchronizedList(java.util.List<T>,java.lang.Object)		<[T extends Object]> @Readonly List<@Readonly T extends @Readonly Object> ([@Readonly List<@Readonly T extends @Readonly Object>, @Readonly Object]) @Readonly Collections
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	list		@Readonly List<@Readonly T extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	mutex		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	50	stack.util.Stack		@Readonly Stack<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	55	Stack()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	55	Stack()		void () @Mutable Stack<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	68	item		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	68	push(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	68	push(E)		@Readonly E extends @Readonly Object ([@Mutable E extends @Mutable Object]) @Mutable Stack<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	82	pop()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	82	pop()		@Readonly E extends @Readonly Object () @Mutable Stack<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	83	obj		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	100	peek()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	100	peek()		@Readonly E extends @Readonly Object () @Readonly Stack<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	114	empty()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	114	empty()		@Readonly boolean () @Readonly Stack<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	132	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	132	search(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	132	search(java.lang.Object)		@Readonly int ([@Readonly Object]) @Readonly Stack<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	92	stack.util.Vector		@Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	105	elementData		@Mutable Object @Mutable []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	139	Vector(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	139	Vector(int,int)		void ([@Readonly int, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	156	Vector(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	156	Vector(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	165	Vector()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	165	Vector()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	179	Vector(java.util.Collection<? extends E>)-static		@Mutable
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	179	Vector(java.util.Collection<? extends E>)		void ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	179	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	200	anArray		@Readonly Object @Mutable []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	200	copyInto(java.lang.Object[])-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	200	copyInto(java.lang.Object[])		void ([@Readonly Object @Mutable []]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	212	trimToSize()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	212	trimToSize()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	237	ensureCapacity(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	237	ensureCapacity(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	250	ensureCapacityHelper(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	250	ensureCapacityHelper(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	253	oldData		@Readonly Object @Readonly []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	272	setSize(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	272	setSize(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	291	capacity()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	291	capacity()		@Readonly int () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	300	size()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	300	size()		@Readonly int () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	311	isEmpty()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	311	isEmpty()		@Readonly boolean () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	324	elements()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	324	elements()		@Readonly Enumeration<@Readonly E extends @Readonly Object> () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	325	<anonymous stack.util.Vector$1>		@Mutable Object & @Mutable Enumeration<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	328	hasMoreElements()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	328	hasMoreElements()		@Readonly boolean () @Readonly Object & @Readonly Enumeration<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	332	nextElement()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	332	nextElement()		@Readonly E extends @Readonly Object () @Readonly Object & @Readonly Enumeration<E extends Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	352	contains(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	352	contains(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	352	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	367	indexOf(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	367	indexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	367	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	387	indexOf(java.lang.Object,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	387	indexOf(java.lang.Object,int)		@Readonly int ([@Readonly Object, @Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	387	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	411	lastIndexOf(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	411	lastIndexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	411	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	431	lastIndexOf(java.lang.Object,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	431	lastIndexOf(java.lang.Object,int)		@Readonly int ([@Readonly Object, @Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	431	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	458	elementAt(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	458	elementAt(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	473	firstElement()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	473	firstElement()		@Readonly E extends @Readonly Object () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	487	lastElement()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	487	lastElement()		@Readonly E extends @Readonly Object () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	514	obj		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	514	setElementAt(E,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	514	setElementAt(E,int)		void ([@Mutable E extends @Mutable Object, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	541	removeElementAt(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	541	removeElementAt(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	581	insertElementAt(E,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	581	insertElementAt(E,int)		void ([@Mutable E extends @Mutable Object, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	581	obj		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	604	addElement(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	604	addElement(E)		void ([@Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	604	obj		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	625	obj		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	625	removeElement(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	625	removeElement(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	641	removeAllElements()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	641	removeAllElements()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	657	clone()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	657	clone()		@Polyread Object () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	659	v		@Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	664	e		@Readonly CloneNotSupportedException
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	676	toArray()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	676	toArray()		@Mutable Object @Polyread [] () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	703	<T>toArray(T[])-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	703	<T>toArray(T[])		<[T extends Object]> @Mutable T extends @Mutable Object @Readonly [] ([@Mutable T extends @Mutable Object @Mutable []]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	704	a		@Mutable T extends @Mutable Object @Mutable []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	718	elementData(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	718	elementData(int)		@Polyread E extends @Polyread Object ([@Readonly int]) @Polyread Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	732	get(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	732	get(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	750	element		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	750	set(int,E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	750	set(int,E)		@Readonly E extends @Readonly Object ([@Readonly int, @Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	754	oldValue		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	766	add(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	766	add(E)		@Readonly boolean ([@Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	766	e		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	784	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	784	remove(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	784	remove(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	799	add(int,E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	799	add(int,E)		void ([@Readonly int, @Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	799	element		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	814	remove(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	814	remove(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	818	oldValue		@Readonly E extends @Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	835	clear()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	835	clear()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	851	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	851	containsAll(java.util.Collection<?>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	851	containsAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	868	addAll(java.util.Collection<? extends E>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	868	addAll(java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	868	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	870	a		@Readonly Object @Readonly []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	892	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	892	removeAll(java.util.Collection<?>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	892	removeAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	912	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	912	retainAll(java.util.Collection<?>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	912	retainAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	933	addAll(int,java.util.Collection<? extends E>)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	933	addAll(int,java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly int, @Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	933	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	938	a		@Readonly Object @Readonly []
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	964	equals(java.lang.Object)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	964	equals(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	964	o		@Readonly Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	971	hashCode()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	971	hashCode()		@Readonly int () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	979	toString()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	979	toString()		@Readonly String () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1017	subList(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1017	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1029	removeRange(int,int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1029	removeRange(int,int)		void ([@Readonly int, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1046	s		@Mutable ObjectOutputStream
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1046	writeObject(java.io.ObjectOutputStream)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1046	writeObject(java.io.ObjectOutputStream)		void ([@Mutable ObjectOutputStream]) @Readonly Vector<@Readonly E extends @Readonly Object> throws [IOException]
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1064	listIterator(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1064	listIterator(int)		@Readonly ListIterator<@Readonly E extends @Readonly Object> ([@Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1078	listIterator()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1078	listIterator()		@Readonly ListIterator<@Readonly E extends @Readonly Object> () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1089	iterator()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1089	iterator()		@Readonly Iterator<@Readonly E extends @Readonly Object> () @Readonly Vector<@Readonly E extends @Readonly Object>
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1096	stack.util.Vector.Itr		@Mutable Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1101	hasNext()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1101	hasNext()		@Readonly boolean () @Readonly Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1107	next()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1107	next()		@Polyread E extends @Polyread Object () @Mutable Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1118	remove()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1118	remove()		void () @Mutable Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1130	checkForComodification()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1130	checkForComodification()		void () @Readonly Itr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1140	ListItr(int)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1140	ListItr(int)		void ([@Readonly int]) @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1145	hasPrevious()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1145	hasPrevious()		@Readonly boolean () @Readonly ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1149	nextIndex()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1149	nextIndex()		@Readonly int () @Readonly ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1153	previousIndex()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1153	previousIndex()		@Readonly int () @Readonly ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1157	previous()-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1157	previous()		@Readonly E extends @Readonly Object () @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1168	e		@Mutable E extends @Mutable Object
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1168	set(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1168	set(E)		void ([@Mutable E extends @Mutable Object]) @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1177	add(E)-static		@Readonly
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1177	add(E)		void ([@Mutable E extends @Mutable Object]) @Mutable ListItr
-/home/matteo/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1177	e		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	70	AbstractCollection()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	70	AbstractCollection()		void () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	80	iterator()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	80	iterator()		@Polyread Iterator<@Readonly E extends @Readonly Object> () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	82	size()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	82	size()		@Readonly int () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	89	isEmpty()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	89	isEmpty()		@Readonly boolean () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	102	contains(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	102	contains(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	102	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	103	e		@Readonly Iterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	138	toArray()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	138	toArray()		@Readonly Object @Polyread [] () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	140	r		@Mutable Object @Mutable []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	141	it		@Mutable Iterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	177	<T>toArray(T[])-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	177	<T>toArray(T[])		<[T extends Object]> @Mutable T extends @Mutable Object @Readonly [] ([@Mutable T extends @Mutable Object @Mutable []]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	177	a		@Mutable T extends @Mutable Object @Mutable []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	180	r		@Mutable T extends @Mutable Object @Mutable []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	183	it		@Mutable Iterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	<T>finishToArray(T[],java.util.Iterator<?>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	<T>finishToArray(T[],java.util.Iterator<?>)		<[T extends Object]> @Mutable T extends @Mutable Object @Polyread [] ([@Mutable T extends @Mutable Object @Mutable [], @Mutable Iterator<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	it		@Mutable Iterator<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	207	r		@Mutable T extends @Mutable Object @Mutable []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	241	add(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	241	add(E)		@Readonly boolean ([@Readonly E extends @Readonly Object]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	241	e		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	261	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	261	remove(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	261	remove(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	262	e		@Mutable Iterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	296	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	296	containsAll(java.util.Collection<?>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	296	containsAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	297	e		@Readonly Iterator<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	322	addAll(java.util.Collection<? extends E>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	322	addAll(java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	322	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	324	e		@Readonly Iterator<@Readonly ? extends @Readonly E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	353	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	353	removeAll(java.util.Collection<?>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	353	removeAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	355	e		@Mutable Iterator<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	386	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	386	retainAll(java.util.Collection<?>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	386	retainAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	388	e		@Mutable Iterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	413	clear()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	413	clear()		void () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	414	e		@Mutable Iterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	434	toString()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	434	toString()		@Readonly String () @Readonly AbstractCollection<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	435	i		@Readonly Iterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	439	sb		@Mutable StringBuilder
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractCollection.java	442	e		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	81	stack.util.AbstractList		@Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	86	AbstractList()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	86	AbstractList()		void () @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	117	add(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	117	add(E)		@Readonly boolean ([@Readonly E extends @Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	117	e		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	127	get(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	127	get(int)		@Polyread E extends @Polyread Object ([@Readonly int]) @Readonly AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	141	element		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	141	set(int,E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	141	set(int,E)		@Readonly E extends @Readonly Object ([@Readonly int, @Readonly E extends @Readonly Object]) @Readonly AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	157	add(int,E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	157	add(int,E)		void ([@Readonly int, @Readonly E extends @Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	157	element		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	170	remove(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	170	remove(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	187	indexOf(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	187	indexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	187	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	188	e		@Readonly ListIterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	212	lastIndexOf(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	212	lastIndexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	212	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	213	e		@Readonly ListIterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	243	clear()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	243	clear()		void () @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	266	addAll(int,java.util.Collection<? extends E>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	266	addAll(int,java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly int, @Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	266	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	269	e		@Readonly Iterator<@Readonly ? extends @Readonly E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	298	iterator()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	298	iterator()		@Readonly Iterator<@Readonly E extends @Readonly Object> () @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	309	listIterator()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	309	listIterator()		@Readonly ListIterator<@Readonly E extends @Readonly Object> () @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	335	listIterator(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	335	listIterator(int)		@Polyread ListIterator<@Readonly E extends @Readonly Object> ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	341	stack.util.AbstractList.Itr		@Mutable Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	361	hasNext()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	361	hasNext()		@Readonly boolean () @Mutable Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	365	next()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	365	next()		@Polyread E extends @Polyread Object () @Mutable Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	369	next		@Polyread E extends @Polyread Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	373	e		@Readonly IndexOutOfBoundsException
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	379	remove()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	379	remove()		void () @Mutable Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	390	e		@Readonly IndexOutOfBoundsException
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	395	checkForComodification()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	395	checkForComodification()		void () @Readonly Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	402	ListItr(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	402	ListItr(int)		void ([@Readonly int]) @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	406	hasPrevious()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	406	hasPrevious()		@Readonly boolean () @Readonly ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	410	previous()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	410	previous()		@Readonly E extends @Readonly Object () @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	414	previous		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	417	e		@Readonly IndexOutOfBoundsException
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	423	nextIndex()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	423	nextIndex()		@Readonly int () @Readonly ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	427	previousIndex()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	427	previousIndex()		@Readonly int () @Readonly ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	431	e		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	431	set(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	431	set(E)		void ([@Readonly E extends @Readonly Object]) @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	439	ex		@Readonly IndexOutOfBoundsException
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	444	add(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	444	add(E)		void ([@Readonly E extends @Readonly Object]) @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	444	e		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	453	ex		@Readonly IndexOutOfBoundsException
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	494	subList(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	494	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	523	equals(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	523	equals(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	523	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	529	e1		@Readonly ListIterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	530	e2		@Readonly ListIterator<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	532	o1		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	533	o2		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	549	hashCode()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	549	hashCode()		@Readonly int () @Readonly AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	551	e		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	578	removeRange(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	578	removeRange(int,int)		void ([@Readonly int, @Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	579	it		@Mutable ListIterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	614	rangeCheckForAdd(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	614	rangeCheckForAdd(int)		void ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	619	outOfBoundsMsg(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	619	outOfBoundsMsg(int)		@Readonly String ([@Readonly int]) @Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	625	l		@Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	629	SubList(stack.util.AbstractList<E>,int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	629	SubList(stack.util.AbstractList<E>,int,int)		void ([@Mutable AbstractList<@Readonly E extends @Readonly Object>, @Readonly int, @Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	629	list		@Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	643	element		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	643	set(int,E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	643	set(int,E)		@Readonly E extends @Readonly Object ([@Readonly int, @Readonly E extends @Readonly Object]) @Readonly SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	649	get(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	649	get(int)		@Polyread E extends @Polyread Object ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	655	size()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	655	size()		@Readonly int () @Readonly SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	660	add(int,E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	660	add(int,E)		void ([@Readonly int, @Readonly E extends @Readonly Object]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	660	element		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	668	remove(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	668	remove(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	671	result		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	677	removeRange(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	677	removeRange(int,int)		void ([@Readonly int, @Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	684	addAll(java.util.Collection<? extends E>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	684	addAll(java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	684	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	688	addAll(int,java.util.Collection<? extends E>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	688	addAll(int,java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly int, @Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	688	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	701	iterator()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	701	iterator()		@Readonly Iterator<@Readonly E extends @Readonly Object> () @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	705	listIterator(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	705	listIterator(int)		@Polyread ListIterator<@Readonly E extends @Readonly Object> ([@Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	709	<anonymous stack.util.SubList$1>		@Mutable Object & @Mutable ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	710	i		@Mutable ListIterator<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	712	hasNext()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	712	hasNext()		@Readonly boolean () @Readonly Object & @Readonly ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	716	next()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	716	next()		@Polyread E extends @Polyread Object () @Readonly Object & @Readonly ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	723	hasPrevious()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	723	hasPrevious()		@Readonly boolean () @Readonly Object & @Readonly ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	727	previous()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	727	previous()		@Readonly E extends @Readonly Object () @Readonly Object & @Readonly ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	734	nextIndex()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	734	nextIndex()		@Readonly int () @Readonly Object & @Readonly ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	738	previousIndex()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	738	previousIndex()		@Readonly int () @Readonly Object & @Readonly ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	742	remove()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	742	remove()		void () @Mutable Object & @Mutable ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	748	e		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	748	set(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	748	set(E)		void ([@Mutable E extends @Mutable Object]) @Mutable Object & @Mutable ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	752	add(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	752	add(E)		void ([@Mutable E extends @Mutable Object]) @Mutable Object & @Mutable ListIterator<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	752	e		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	760	subList(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	760	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Mutable SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	764	rangeCheck(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	764	rangeCheck(int)		void ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	769	rangeCheckForAdd(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	769	rangeCheckForAdd(int)		void ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	774	outOfBoundsMsg(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	774	outOfBoundsMsg(int)		@Readonly String ([@Readonly int]) @Readonly SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	778	checkForComodification()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	778	checkForComodification()		void () @Readonly SubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	785	RandomAccessSubList(stack.util.AbstractList<E>,int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	785	RandomAccessSubList(stack.util.AbstractList<E>,int,int)		void ([@Mutable AbstractList<@Readonly E extends @Readonly Object>, @Readonly int, @Readonly int]) @Mutable RandomAccessSubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	785	list		@Mutable AbstractList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	789	subList(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/AbstractList.java	789	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Mutable RandomAccessSubList<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	<T>synchronizedList(java.util.List<T>,java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	<T>synchronizedList(java.util.List<T>,java.lang.Object)		<[T extends Object]> @Readonly List<@Readonly T extends @Readonly Object> ([@Readonly List<@Readonly T extends @Readonly Object>, @Readonly Object]) @Readonly Collections
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	list		@Readonly List<@Readonly T extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Collections.java	1825	mutex		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	50	stack.util.Stack		@Readonly Stack<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	55	Stack()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	55	Stack()		void () @Mutable Stack<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	68	item		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	68	push(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	68	push(E)		@Readonly E extends @Readonly Object ([@Mutable E extends @Mutable Object]) @Mutable Stack<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	82	pop()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	82	pop()		@Readonly E extends @Readonly Object () @Mutable Stack<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	83	obj		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	100	peek()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	100	peek()		@Readonly E extends @Readonly Object () @Readonly Stack<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	114	empty()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	114	empty()		@Readonly boolean () @Readonly Stack<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	132	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	132	search(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Stack.java	132	search(java.lang.Object)		@Readonly int ([@Readonly Object]) @Readonly Stack<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	92	stack.util.Vector		@Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	105	elementData		@Mutable Object @Mutable []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	139	Vector(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	139	Vector(int,int)		void ([@Readonly int, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	156	Vector(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	156	Vector(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	165	Vector()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	165	Vector()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	179	Vector(java.util.Collection<? extends E>)-static		@Mutable
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	179	Vector(java.util.Collection<? extends E>)		void ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	179	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	200	anArray		@Readonly Object @Mutable []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	200	copyInto(java.lang.Object[])-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	200	copyInto(java.lang.Object[])		void ([@Readonly Object @Mutable []]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	212	trimToSize()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	212	trimToSize()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	237	ensureCapacity(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	237	ensureCapacity(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	250	ensureCapacityHelper(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	250	ensureCapacityHelper(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	253	oldData		@Readonly Object @Readonly []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	272	setSize(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	272	setSize(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	291	capacity()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	291	capacity()		@Readonly int () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	300	size()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	300	size()		@Readonly int () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	311	isEmpty()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	311	isEmpty()		@Readonly boolean () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	324	elements()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	324	elements()		@Readonly Enumeration<@Readonly E extends @Readonly Object> () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	325	<anonymous stack.util.Vector$1>		@Mutable Object & @Mutable Enumeration<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	328	hasMoreElements()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	328	hasMoreElements()		@Readonly boolean () @Readonly Object & @Readonly Enumeration<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	332	nextElement()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	332	nextElement()		@Readonly E extends @Readonly Object () @Readonly Object & @Readonly Enumeration<E extends Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	352	contains(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	352	contains(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	352	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	367	indexOf(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	367	indexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	367	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	387	indexOf(java.lang.Object,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	387	indexOf(java.lang.Object,int)		@Readonly int ([@Readonly Object, @Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	387	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	411	lastIndexOf(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	411	lastIndexOf(java.lang.Object)		@Readonly int ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	411	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	431	lastIndexOf(java.lang.Object,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	431	lastIndexOf(java.lang.Object,int)		@Readonly int ([@Readonly Object, @Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	431	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	458	elementAt(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	458	elementAt(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	473	firstElement()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	473	firstElement()		@Readonly E extends @Readonly Object () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	487	lastElement()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	487	lastElement()		@Readonly E extends @Readonly Object () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	514	obj		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	514	setElementAt(E,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	514	setElementAt(E,int)		void ([@Mutable E extends @Mutable Object, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	541	removeElementAt(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	541	removeElementAt(int)		void ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	581	insertElementAt(E,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	581	insertElementAt(E,int)		void ([@Mutable E extends @Mutable Object, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	581	obj		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	604	addElement(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	604	addElement(E)		void ([@Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	604	obj		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	625	obj		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	625	removeElement(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	625	removeElement(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	641	removeAllElements()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	641	removeAllElements()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	657	clone()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	657	clone()		@Polyread Object () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	659	v		@Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	664	e		@Readonly CloneNotSupportedException
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	676	toArray()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	676	toArray()		@Mutable Object @Polyread [] () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	703	<T>toArray(T[])-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	703	<T>toArray(T[])		<[T extends Object]> @Mutable T extends @Mutable Object @Readonly [] ([@Mutable T extends @Mutable Object @Mutable []]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	704	a		@Mutable T extends @Mutable Object @Mutable []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	718	elementData(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	718	elementData(int)		@Polyread E extends @Polyread Object ([@Readonly int]) @Polyread Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	732	get(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	732	get(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	750	element		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	750	set(int,E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	750	set(int,E)		@Readonly E extends @Readonly Object ([@Readonly int, @Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	754	oldValue		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	766	add(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	766	add(E)		@Readonly boolean ([@Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	766	e		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	784	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	784	remove(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	784	remove(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	799	add(int,E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	799	add(int,E)		void ([@Readonly int, @Mutable E extends @Mutable Object]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	799	element		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	814	remove(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	814	remove(int)		@Readonly E extends @Readonly Object ([@Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	818	oldValue		@Readonly E extends @Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	835	clear()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	835	clear()		void () @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	851	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	851	containsAll(java.util.Collection<?>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	851	containsAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	868	addAll(java.util.Collection<? extends E>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	868	addAll(java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	868	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	870	a		@Readonly Object @Readonly []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	892	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	892	removeAll(java.util.Collection<?>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	892	removeAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	912	c		@Readonly Collection<@Readonly ? extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	912	retainAll(java.util.Collection<?>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	912	retainAll(java.util.Collection<?>)		@Readonly boolean ([@Readonly Collection<@Readonly ? extends @Readonly Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	933	addAll(int,java.util.Collection<? extends E>)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	933	addAll(int,java.util.Collection<? extends E>)		@Readonly boolean ([@Readonly int, @Readonly Collection<@Readonly ? extends @Readonly E extends Object>]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	933	c		@Readonly Collection<@Readonly ? extends @Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	938	a		@Readonly Object @Readonly []
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	964	equals(java.lang.Object)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	964	equals(java.lang.Object)		@Readonly boolean ([@Readonly Object]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	964	o		@Readonly Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	971	hashCode()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	971	hashCode()		@Readonly int () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	979	toString()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	979	toString()		@Readonly String () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1017	subList(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1017	subList(int,int)		@Readonly List<@Readonly E extends @Readonly Object> ([@Readonly int, @Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1029	removeRange(int,int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1029	removeRange(int,int)		void ([@Readonly int, @Readonly int]) @Mutable Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1046	s		@Mutable ObjectOutputStream
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1046	writeObject(java.io.ObjectOutputStream)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1046	writeObject(java.io.ObjectOutputStream)		void ([@Mutable ObjectOutputStream]) @Readonly Vector<@Readonly E extends @Readonly Object> throws [IOException]
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1064	listIterator(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1064	listIterator(int)		@Readonly ListIterator<@Readonly E extends @Readonly Object> ([@Readonly int]) @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1078	listIterator()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1078	listIterator()		@Readonly ListIterator<@Readonly E extends @Readonly Object> () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1089	iterator()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1089	iterator()		@Readonly Iterator<@Readonly E extends @Readonly Object> () @Readonly Vector<@Readonly E extends @Readonly Object>
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1096	stack.util.Vector.Itr		@Mutable Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1101	hasNext()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1101	hasNext()		@Readonly boolean () @Readonly Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1107	next()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1107	next()		@Polyread E extends @Polyread Object () @Mutable Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1118	remove()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1118	remove()		void () @Mutable Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1130	checkForComodification()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1130	checkForComodification()		void () @Readonly Itr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1140	ListItr(int)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1140	ListItr(int)		void ([@Readonly int]) @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1145	hasPrevious()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1145	hasPrevious()		@Readonly boolean () @Readonly ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1149	nextIndex()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1149	nextIndex()		@Readonly int () @Readonly ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1153	previousIndex()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1153	previousIndex()		@Readonly int () @Readonly ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1157	previous()-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1157	previous()		@Readonly E extends @Readonly Object () @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1168	e		@Mutable E extends @Mutable Object
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1168	set(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1168	set(E)		void ([@Mutable E extends @Mutable Object]) @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1177	add(E)-static		@Readonly
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1177	add(E)		void ([@Mutable E extends @Mutable Object]) @Mutable ListItr
+/home/matteo/git/TSG/TestScenarioGenerator/type-inference-0.1.3/Stack-UseCase/src/stack/util/Vector.java	1177	e		@Mutable E extends @Mutable Object
 INFO: There are 172 (58.10811%) readonly, 18 (6.0810814%) polyread and 106 (35.81081%) mutable references out of 296 references
 INFO: Total methods: 145 pure methods: 77(53.103447%)

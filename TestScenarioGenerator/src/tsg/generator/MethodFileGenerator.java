@@ -47,7 +47,7 @@ public class MethodFileGenerator {
 		String constructorStr;
 		String targetClass = Options.I().getTargetClass();
 		//TODO fare un utility
-		targetClass = targetClass.replaceAll(Options.I().getSourcepath(), "").replaceAll(".java", "").replaceAll("/", ".");
+		targetClass = targetClass.replaceAll(".java", "").replaceAll("/", ".");
 		logger.info("Generating methods.csv for Randoop");
 		logger.debug("Class to be invetigated: " + targetClass);
 		

@@ -16,7 +16,7 @@ public class TypeInference {
 		typeInference.add(Options.I().getOutputDir());
 		typeInference.add("-sourcepath");
 		typeInference.add(Options.I().getSourcepath());
-		typeInference.add(Options.I().getTargetClass());
+		typeInference.add(Options.I().getSourcepath() + "/" + Options.I().getTargetClass());
 		for(String classpath : Options.I().getClasses().split(";")) {
 			typeInference.add(classpath);
 		}

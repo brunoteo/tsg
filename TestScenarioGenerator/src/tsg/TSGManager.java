@@ -15,7 +15,7 @@ public class TSGManager {
 	public void generateTS() throws Exception{
 		
 		// =================================== INIT ===================================
-		//TODO controllare Type-Inference path e randoop (e i sorgenti?)
+		//TODO controllare ciò che ho passato come args
 		
 		// ========================= CREATE PURE METHODS FILE =========================
 		PureMethodGenerator pureMethodGenerator = PureMethodGenerator.getInstance();
