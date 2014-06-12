@@ -66,7 +66,6 @@ public class MethodFileGenerator {
 		}
 		logger.debug("Found: " + constructorList.size() + " constructors");
 		
-		//TODO eliminare i metodi blackList
 		for(Method method : c.getMethods()) {
 			if (!method.getDeclaringClass().equals(Class.class) &&
 					!method.getDeclaringClass().equals(Object.class) &&

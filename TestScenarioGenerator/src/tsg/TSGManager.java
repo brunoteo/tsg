@@ -32,5 +32,8 @@ public class TSGManager {
 		// =============================== RUN RANDOOP ================================
 		TestCaseGenerator testCaseGenerator = TestCaseGenerator.getInstance();
 		testCaseGenerator.generateTestsCase();
+		
+		// ============================== AST TEST CASE ===============================
+		
 	}
 }

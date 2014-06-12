@@ -47,8 +47,7 @@ private static final Logger logger = new Logger(WorkerTypeInference.class);
 			result.setCommand(randoop.getCommand());
 			result.setStdout(getOutStream());
 			result.setStderr(getErrStream());
-			//FIXME filename
-			result.setFilename("bo");		
+			result.setFilename("RandoopTest0.java");		
 			result.setExitStatus(this.exitStatus);
 		}
 		catch (IOException | InterruptedException e) {
