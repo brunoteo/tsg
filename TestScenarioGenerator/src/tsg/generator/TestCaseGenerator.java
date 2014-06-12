@@ -76,7 +76,7 @@ public class TestCaseGenerator {
 			}
 			
 			logger.debug("Found: " + tests.size() + " methods");
-
+			logger.info("Loaded methods - DONE");
 		} catch (ParseException | IOException e) {
 			logger.error(e.getMessage());
 		}
