@@ -74,6 +74,7 @@ public class MethodFileGenerator {
 					!isBlacklist(method)) {
 							
 					//TODO fare un utility
+					//FIXME Sistemare Object[] con L ecc..
 					methodStr = method.toString();
 					methodStr = methodStr.substring(methodStr.indexOf(method.getDeclaringClass().toString().split(" ")[1]));
 					methodsList.add(methodStr);

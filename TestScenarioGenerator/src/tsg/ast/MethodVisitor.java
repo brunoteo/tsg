@@ -15,9 +15,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Void> {
 	
 	@Override
 	public void visit(final MethodDeclaration n, final Void arg) {
-		if (!n.getName().equals("initEvoSuiteFramework")) {
-			this.tests.add(n);
-		}
+		this.tests.add(n);
 		super.visit(n, arg);
 	}
 	

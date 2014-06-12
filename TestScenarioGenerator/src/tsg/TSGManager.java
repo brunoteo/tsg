@@ -34,6 +34,6 @@ public class TSGManager {
 		testCaseGenerator.generateTestsCase();
 		
 		// ============================== AST TEST CASE ===============================
-		
+		testCaseGenerator.generateAST();
 	}
 }

@@ -1,19 +1,33 @@
 package tsg.generator;
 
+import japa.parser.JavaParser;
+import japa.parser.ParseException;
+import japa.parser.ast.CompilationUnit;
+import japa.parser.ast.body.MethodDeclaration;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import tsg.ast.MethodVisitor;
+import tsg.ast.TryCatchVisitor;
 import tsg.execution.ExecutionManager;
 import tsg.execution.ExecutionResult;
 import tsg.logging.Logger;
+import tsg.option.Options;
 import tsg.randoop.Randoop;
-import tsg.typeinference.TypeInference;
 
 public class TestCaseGenerator {
 	
 	private static final Logger logger = new Logger(TestCaseGenerator.class);
 	
 	private static TestCaseGenerator instance;
+	
+	private final List<MethodDeclaration> tests;
 
 	public TestCaseGenerator() {
-		
+		this.tests = new ArrayList<MethodDeclaration>();
 	}
 	
 	public static TestCaseGenerator getInstance() {
@@ -43,6 +57,29 @@ public class TestCaseGenerator {
 		ExecutionManager manager = new ExecutionManager();
 		Randoop randoop = new Randoop();
 		return manager.execute(randoop);
+	}
+	
+	public void generateAST() {
+		logger.debug("Loading generated test");
+		String testPath = Options.I().getRandoopDir() + "/pippo/RandoopTest0.java";
+		try {
+			CompilationUnit cu = JavaParser.parse(new File(testPath));
+			
+			MethodVisitor visitorM = new MethodVisitor();
+			visitorM.visit(cu, null);		
+			for (MethodDeclaration method : visitorM.getTests()) {
+				TryCatchVisitor visitorTC = new TryCatchVisitor();
+				visitorTC.visit(method, null);
+				if(!visitorTC.isFound()) {
+					tests.add(method);
+				}
+			}
+			
+			logger.debug("Found: " + tests.size() + " methods");
+
+		} catch (ParseException | IOException e) {
+			logger.error(e.getMessage());
+		}
 	}
 	
 	
