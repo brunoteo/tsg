@@ -14,7 +14,7 @@ public class TryCatchVisitor extends VoidVisitorAdapter<Void> {
 	
 	@Override
 	public void visit(final TryStmt n, final Void arg) {
-		if(n.getTryBlock()!=null) this.found = true;
+		this.found = true;
 		super.visit(n, arg);
 	}
 	
