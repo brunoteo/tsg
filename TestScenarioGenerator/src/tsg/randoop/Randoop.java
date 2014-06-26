@@ -23,7 +23,7 @@ public class Randoop {
 		randoop.add("--pretty-print=true");
 		randoop.add("--outputlimit=50");
 		randoop.add("--always-use-ints-as-objects=true");
-		randoop.add("--maxsize=10");
+		randoop.add("--maxsize=15");
 		randoop.add("--timelimit=60");
 		this.command = randoop.toString();
 		return randoop.toArray(new String[0]);

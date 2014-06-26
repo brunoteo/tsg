@@ -93,7 +93,6 @@ public class MethodFileGenerator {
 			
 		}
 		logger.debug("Found: " + methodsList.size() + " non-pure methods");
-		//TODO eliminare i metodi non puri che non ci piacciono
 	}
 	
 	public void createMethodsFile() {
