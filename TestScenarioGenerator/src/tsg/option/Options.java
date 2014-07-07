@@ -15,8 +15,10 @@ public class Options {
 	}
 
 	@Option(name = "-sourcepath",
-			usage = "Sourcepath to classes")
-	private String soucepath = System.getProperty("user.dir") + "/" + "type-inference-0.1.3/Stack-UseCase/src";
+			usage = "Sourcepath to classes",
+			required = true)
+//	private String soucepath = System.getProperty("user.dir") + "/" + "type-inference-0.1.3/Stack-UseCase/src";
+	private String soucepath;
 	
 	@Option(name = "-targetClass",
 			usage = "Target class",
@@ -34,8 +36,10 @@ public class Options {
 	private String classes;
 	
 	@Option(name = "-outputDir",
-			usage = "Output directory for binary")
-	private String outputDir = System.getProperty("user.dir") + "/" + "type-inference-0.1.3/Stack-UseCase/bin";
+			usage = "Output directory for binary",
+			required = true)
+//	private String outputDir = System.getProperty("user.dir") + "/" + "type-inference-0.1.3/Stack-UseCase/bin";
+	private String outputDir;
 	
 	@Option(name = "-blackList",
 			usage = "List of methods to ignore")

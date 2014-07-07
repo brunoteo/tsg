@@ -10,6 +10,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.text.html.Option;
+
 import tsg.execution.InternalClassloader;
 import tsg.logging.Logger;
 import tsg.option.Options;
@@ -127,6 +129,9 @@ public class MethodFileGenerator {
 	}
 	
 	private boolean isBlacklist(Method method) {
+		//FIXME non deve cancellare il metodo under test
+		if(method.getName().equals(Options.I().getMethodUnderTest()))
+			return false;
 		for(String black : blackList) {
 			if (method.getName().contains(black)) {
 				return true;

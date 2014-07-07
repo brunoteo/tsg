@@ -18,12 +18,11 @@ public class Randoop {
 		randoop.add("gentests");
 		randoop.add("--methodlist=methods.csv");
 		randoop.add("--output-tests=pass");
-		//FIXME cambiare cartella output
-		randoop.add("--junit-output-dir=pippo");
+		randoop.add("--junit-output-dir=result");
 		randoop.add("--pretty-print=true");
-		randoop.add("--outputlimit=50");
+		randoop.add("--outputlimit=100");
 		randoop.add("--always-use-ints-as-objects=true");
-		randoop.add("--maxsize=15");
+		randoop.add("--maxsize=25");
 		randoop.add("--timelimit=60");
 		this.command = randoop.toString();
 		return randoop.toArray(new String[0]);
