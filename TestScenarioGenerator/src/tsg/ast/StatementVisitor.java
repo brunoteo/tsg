@@ -3,6 +3,7 @@ package tsg.ast;
 import java.util.ArrayList;
 import java.util.List;
 
+import tsg.option.Options;
 import japa.parser.ast.stmt.ExpressionStmt;
 import japa.parser.ast.stmt.Statement;
 import japa.parser.ast.stmt.TryStmt;
@@ -27,7 +28,8 @@ public class StatementVisitor extends VoidVisitorAdapter<Void> {
 	
 	public void visit(final ExpressionStmt n, final Void arg) {
 		if(!tryFound && !methodFound) {
-			if(n.toString().contains("peek")) methodFound = true;
+			String[] ss = Options.I().getMethodUnderTest().split("\\(")[0].split("\\.");
+			if(n.toString().contains(ss[ss.length-1])) methodFound = true;
 			stms.add(n);
 		}
 		super.visit(n, arg);

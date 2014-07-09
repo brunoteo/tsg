@@ -5,10 +5,7 @@ import japa.parser.ParseException;
 import japa.parser.ast.CompilationUnit;
 import japa.parser.ast.body.MethodDeclaration;
 import japa.parser.ast.stmt.BlockStmt;
-import japa.parser.ast.stmt.ExpressionStmt;
 import japa.parser.ast.stmt.Statement;
-import japa.parser.ast.stmt.TryStmt;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,7 +15,6 @@ import java.util.List;
 
 import tsg.ast.MethodVisitor;
 import tsg.ast.StatementVisitor;
-import tsg.ast.TryCatchVisitor;
 import tsg.execution.ExecutionManager;
 import tsg.execution.ExecutionResult;
 import tsg.logging.Logger;
@@ -67,6 +63,7 @@ public class TestCaseGenerator {
 		return manager.execute(randoop);
 	}
 	
+	//TODO recuperare gli import
 	public void generateAST() {
 		logger.debug("Loading generated test");
 		String testPath = Options.I().getRandoopDir() + "/result/RandoopTest0.java";

@@ -1,7 +1,6 @@
 cons : stack.util.Stack.<init>()
 method : stack.util.Stack.pop()
 method : stack.util.Stack.push(java.lang.Object)
-method : stack.util.Stack.peek()
 method : stack.util.Vector.add(int,java.lang.Object)
 method : stack.util.Vector.add(java.lang.Object)
 method : stack.util.Vector.addAll(int,java.util.Collection)
