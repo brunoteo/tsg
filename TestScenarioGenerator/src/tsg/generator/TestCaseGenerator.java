@@ -79,7 +79,6 @@ public class TestCaseGenerator {
 				
 				BlockStmt block = method.getBody();
 				visitorStm.visit(block, null);
-				
 				if(visitorStm.getMethodFound()) {
 					tests.add(visitorStm.getStatements());
 				}
@@ -93,17 +92,27 @@ public class TestCaseGenerator {
 			logger.debug("Prima " + testsStr.size());
 			
 			deleteEqual();
+			changeVarName();
 			
 			logger.debug("Dopo " + testsStr.size());
 			createTestScenarioFile2();
 			
-			logger.debug("Found: " + tests.size() + " methods");
+//			logger.debug("Found: " + tests.size() + " methods");
 			logger.info("Loaded methods - DONE");
 		} catch (ParseException | IOException e) {
 			logger.error(e.getMessage());
 		}
 	}
 	
+	private void changeVarName() {
+		String varName = testsStr.get(0).split(" ")[1];
+		for(int i = 0; i < testsStr.size(); i++) {
+			String tmpSts = testsStr.get(i).replaceAll("^" + varName.substring(0, varName.length()-2), varName);
+			testsStr.set(i, tmpSts);
+		}
+		
+	}
+
 	//FIXME non servono (solo test)
 	public void createTestScenarioFile() {
 		String outputFile = "test_scenario.csv";

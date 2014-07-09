@@ -1,628 +1,381 @@
-System.out.println("%nRandoopTest0.test9");
+System.out.println("%nRandoopTest0.test6");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
-System.out.println("%nRandoopTest0.test14");
+System.out.println("%nRandoopTest0.test8");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+stack1.addElement((Object) 10);
+Object obj0 = stack1.peek();
 
 
 
-System.out.println("%nRandoopTest0.test18");
+System.out.println("%nRandoopTest0.test17");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test19");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test20");
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-Stack stack1 = new Stack();
-boolean b0 = stack1.add((Object) 10);
-boolean b1 = stack1.add((Object) (-1));
-boolean b2 = stack1.add((Object) 100);
-stack1.addElement((Object) 0);
-boolean b3 = stack0.addAll((Collection) stack1);
-stack0.add(1, (Object) 10);
-stack0.setElementAt((Object) 10, 0);
-Stack stack2 = new Stack();
-boolean b4 = stack2.add((Object) 10);
-Object obj1 = stack2.pop();
-
-
-
-System.out.println("%nRandoopTest0.test21");
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-Stack stack1 = new Stack();
-boolean b0 = stack1.add((Object) 10);
-boolean b1 = stack1.add((Object) (-1));
-boolean b2 = stack1.add((Object) 100);
-stack1.addElement((Object) 0);
-boolean b3 = stack0.addAll((Collection) stack1);
-stack0.add(1, (Object) 10);
-Object obj1 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test22");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test23");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test24");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test25");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test26");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test27");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
 System.out.println("%nRandoopTest0.test28");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-stack0.add(1, (Object) 100);
-Stack stack1 = new Stack();
-boolean b2 = stack1.add((Object) 10);
-boolean b3 = stack1.add((Object) (-1));
-boolean b4 = stack1.add((Object) 100);
-stack1.addElement((Object) 0);
-boolean b5 = stack1.add((Object) 0);
-Object obj0 = stack1.pop();
-
-
-
-System.out.println("%nRandoopTest0.test30");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) (-1));
-stack0.addElement((Object) 10);
-Stack stack1 = new Stack();
-boolean b3 = stack1.add((Object) 10);
-boolean b4 = stack1.add((Object) (-1));
-Object obj0 = stack1.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
 System.out.println("%nRandoopTest0.test31");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
+stack0.insertElementAt((Object) 10, 0);
+boolean b0 = stack0.add((Object) 0);
+stack2.addElement((Object) 10);
+boolean b1 = stack1.addAll((Collection) stack2);
+boolean b2 = stack0.addAll(0, (Collection) stack2);
 Object obj0 = stack0.pop();
+stack3.addElement((Object) 10);
+Object obj1 = stack3.peek();
 
 
 
 System.out.println("%nRandoopTest0.test32");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test33");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test34");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test36");
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-Stack stack1 = new Stack();
-boolean b0 = stack1.add((Object) 10);
-boolean b1 = stack1.add((Object) 0);
-Object obj1 = stack1.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
-System.out.println("%nRandoopTest0.test38");
+System.out.println("%nRandoopTest0.test41");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test39");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test43");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test44");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test45");
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 0);
 stack0.addElement((Object) 10);
-Stack stack1 = new Stack();
-boolean b0 = stack1.add((Object) 10);
-boolean b1 = stack1.add((Object) (-1));
-boolean b2 = stack1.add((Object) 100);
-stack1.addElement((Object) 0);
-Object obj1 = stack1.pop();
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test46");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
-System.out.println("%nRandoopTest0.test47");
+System.out.println("%nRandoopTest0.test50");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test48");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test49");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
 System.out.println("%nRandoopTest0.test51");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test52");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test53");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test54");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.insertElementAt((Object) 10, 0);
+boolean b0 = stack0.add((Object) 0);
+stack2.addElement((Object) 10);
+boolean b1 = stack1.addAll((Collection) stack2);
+boolean b2 = stack0.addAll(0, (Collection) stack2);
+stack4.addElement((Object) 10);
+boolean b3 = stack3.addAll((Collection) stack4);
+Object obj0 = stack3.peek();
 
 
 
 System.out.println("%nRandoopTest0.test55");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test56");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test57");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-stack0.add(1, (Object) 100);
-stack0.setSize(100);
-Stack stack1 = new Stack();
-Object obj0 = stack1.push((Object) 0);
-stack1.add(0, (Object) 0);
-stack1.addElement((Object) 10);
-Object obj1 = stack1.pop();
-
-
-
-System.out.println("%nRandoopTest0.test58");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.push((Object) 0);
+stack0.add(0, (Object) 1);
+Object obj1 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test59");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test61");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.push((Object) 0);
+stack0.add(0, (Object) 1);
+stack1.addElement((Object) 10);
+Object obj1 = stack1.peek();
 
 
 
-System.out.println("%nRandoopTest0.test64");
+System.out.println("%nRandoopTest0.test62");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test65");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test66");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack0.peek();
 
 
 
-System.out.println("%nRandoopTest0.test67");
+System.out.println("%nRandoopTest0.test68");
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 0);
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
+
+
+
+System.out.println("%nRandoopTest0.test69");
+Stack stack0 = new Stack();
 stack0.addElement((Object) 10);
-Object obj1 = stack0.pop();
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test70");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test71");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.push((Object) 0);
+stack0.add(0, (Object) 1);
+stack1.addElement((Object) 10);
+Object obj1 = stack1.peek();
 
 
 
 System.out.println("%nRandoopTest0.test72");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test73");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.push((Object) 0);
+stack0.add(0, (Object) 1);
+stack1.addElement((Object) 10);
+Object obj1 = stack1.peek();
 
 
 
 System.out.println("%nRandoopTest0.test74");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test75");
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 0);
 stack0.addElement((Object) 10);
-Object obj1 = stack0.set(0, (Object) 0);
-stack0.setSize(100);
-Object obj2 = stack0.pop();
+stack2.addElement((Object) 10);
+boolean b0 = stack1.addAll((Collection) stack2);
+boolean b1 = stack0.addAll(0, (Collection) stack1);
+stack4.addElement((Object) 10);
+boolean b2 = stack3.addAll((Collection) stack4);
+stack5.addElement((Object) 10);
+Object obj0 = stack5.peek();
 
 
 
 System.out.println("%nRandoopTest0.test77");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) 0);
+stack0.insertElementAt((Object) 10, 0);
+boolean b0 = stack0.add((Object) 0);
+stack2.addElement((Object) 10);
+boolean b1 = stack1.addAll((Collection) stack2);
+boolean b2 = stack0.addAll(0, (Collection) stack2);
 Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test79");
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 0);
-stack0.addElement((Object) 10);
-Object obj1 = stack0.set(0, (Object) 0);
-stack0.setSize(100);
-Object obj2 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test80");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack3.addElement((Object) 10);
+Object obj1 = stack3.peek();
 
 
 
 System.out.println("%nRandoopTest0.test81");
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 0);
-Stack stack1 = new Stack();
-boolean b0 = stack0.addAll(0, (Collection) stack1);
-Object obj1 = stack0.set(0, (Object) (-1));
-Object obj2 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
+
+
+
+System.out.println("%nRandoopTest0.test82");
+Stack stack0 = new Stack();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test83");
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 0);
-stack0.addElement((Object) 10);
-Object obj1 = stack0.set(0, (Object) 0);
-stack0.setSize(100);
-Object obj2 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
 System.out.println("%nRandoopTest0.test84");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
-System.out.println("%nRandoopTest0.test85");
+System.out.println("%nRandoopTest0.test86");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test87");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.push((Object) 0);
+stack0.add(0, (Object) 1);
+Object obj1 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test88");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
+stack0.insertElementAt((Object) 10, 0);
+boolean b0 = stack0.add((Object) 0);
+stack2.addElement((Object) 10);
+boolean b1 = stack1.addAll((Collection) stack2);
+boolean b2 = stack0.addAll(0, (Collection) stack2);
 Object obj0 = stack0.pop();
+stack3.addElement((Object) 10);
+Object obj1 = stack3.peek();
 
 
 
 System.out.println("%nRandoopTest0.test89");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-boolean b3 = stack0.add((Object) 0);
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
+
+
+
+System.out.println("%nRandoopTest0.test90");
+Stack stack0 = new Stack();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.push((Object) 0);
+stack0.add(0, (Object) 1);
+stack1.addElement((Object) 10);
+Object obj1 = stack1.peek();
+
+
+
+System.out.println("%nRandoopTest0.test91");
+Stack stack0 = new Stack();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
+
+
+
+System.out.println("%nRandoopTest0.test92");
+Stack stack0 = new Stack();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
 
 
 
 System.out.println("%nRandoopTest0.test93");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-stack0.addElement((Object) 0);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
-System.out.println("%nRandoopTest0.test94");
+System.out.println("%nRandoopTest0.test95");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-Object obj0 = stack0.pop();
+stack0.addElement((Object) 10);
+Object obj0 = stack0.peek();
+
+
+
+System.out.println("%nRandoopTest0.test96");
+Stack stack0 = new Stack();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
 System.out.println("%nRandoopTest0.test97");
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 0);
-Stack stack1 = new Stack();
-boolean b0 = stack0.addAll(0, (Collection) stack1);
-Object obj1 = stack0.set(0, (Object) (-1));
-Object obj2 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test98");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) (-1));
-boolean b2 = stack0.add((Object) 100);
-Object obj0 = stack0.push((Object) (-1));
-Object obj1 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
 System.out.println("%nRandoopTest0.test99");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
-
-
-
-System.out.println("%nRandoopTest0.test100");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-Object obj0 = stack0.pop();
+stack1.addElement((Object) 10);
+boolean b0 = stack0.addAll((Collection) stack1);
+stack2.addElement((Object) 10);
+Object obj0 = stack2.peek();
 
 
 
