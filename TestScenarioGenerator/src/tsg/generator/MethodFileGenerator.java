@@ -45,15 +45,14 @@ public class MethodFileGenerator {
 	
 	public void generateMethods() throws Exception {
 		Class<?> c;
-		String methodStr;
-		String constructorStr;
+		String methodStr = "";
+		String constructorStr = "";
 		String targetClass = Options.I().getTargetClass();
+		
 		//TODO fare un utility
 		targetClass = targetClass.replaceAll(".java", "").replaceAll("/", ".");
 		logger.info("Generating methods.csv for Randoop");
 		logger.debug("Class to be invetigated: " + targetClass);
-		
-		readBlackList();
 		
 		try {
 			c = Class.forName(targetClass, false, classLoader);
@@ -64,9 +63,12 @@ public class MethodFileGenerator {
 		Constructor[] constructors = c.getDeclaredConstructors();
 		for(Constructor constructor : constructors) {
 			constructorStr = constructor.toGenericString();
+			//TODO utility
 			constructorList.add(constructorStr.substring(constructorStr.indexOf(constructor.getName())));
 		}
 		logger.debug("Found: " + constructorList.size() + " constructors");
+		
+		readBlackList();
 		
 		for(Method method : c.getMethods()) {
 			if (!method.getDeclaringClass().equals(Class.class) &&
@@ -87,11 +89,20 @@ public class MethodFileGenerator {
 	
 	public void removePureMethods(List<String> pureMethods) {
 		logger.debug("Remove pure methods");
+		//TODO utility
+		String[] tmpS = Options.I().getMethodUnderTest().split("\\(")[0].split("\\.");
+		String methodUnderTest = "." + tmpS[tmpS.length-1] + "(";
 		
 		for(String pureMethod : pureMethods) {
-			if (!pureMethod.equals(Options.I().getMethodUnderTest())) {
+			//FIXME rivedere non va bene con gli override
+			tmpS = pureMethod.split("\\(")[0].split("\\.");
+			String pureMethodName = "." + tmpS[tmpS.length-1] + "(";
+			if (!pureMethodName.equals(methodUnderTest)) {
 				methodsList.remove(pureMethod);
 			}
+//			if(pureMethod.equals(Options.I().getMethodUnderTest())) {
+//				methodsList.remove(pureMethod);
+//			}
 			
 		}
 		logger.debug("Found: " + methodsList.size() + " non-pure methods");
@@ -130,7 +141,9 @@ public class MethodFileGenerator {
 	
 	private boolean isBlacklist(Method method) {
 		//FIXME non deve cancellare il metodo under test
-		if(method.getName().equals(Options.I().getMethodUnderTest()))
+		String[] tmpS = Options.I().getMethodUnderTest().split("\\(")[0].split("\\.");
+		String methodName = tmpS[tmpS.length-1];
+		if(method.getName().equals(methodName))
 			return false;
 		for(String black : blackList) {
 			if (method.getName().contains(black)) {

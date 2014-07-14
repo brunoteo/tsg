@@ -39,7 +39,7 @@ public class PureMethodGenerator {
 		ExecutionResult result = generate();
 		
 		logger.debug(result.getStdout());
-//		logger.debug(result.getStderr());
+		logger.debug(result.getStderr());
 		
 		logger.debug("Check whether the generation was successful");
 		//TODO controllare che esista il file pure-methods.csv

@@ -91,8 +91,9 @@ public class TestCaseGenerator {
 			
 			logger.debug("Prima " + testsStr.size());
 			
-			deleteEqual();
 			changeVarName();
+			deleteEqual();
+			
 			
 			logger.debug("Dopo " + testsStr.size());
 			createTestScenarioFile2();
@@ -107,7 +108,7 @@ public class TestCaseGenerator {
 	private void changeVarName() {
 		String varName = testsStr.get(0).split(" ")[1];
 		for(int i = 0; i < testsStr.size(); i++) {
-			String tmpSts = testsStr.get(i).replaceAll("^" + varName.substring(0, varName.length()-2), varName);
+			String tmpSts = testsStr.get(i).replaceAll(varName.substring(0, varName.length()-1) + ".", varName);
 			testsStr.set(i, tmpSts);
 		}
 		

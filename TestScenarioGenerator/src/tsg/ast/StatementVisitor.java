@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import tsg.option.Options;
+import japa.parser.ast.expr.Expression;
 import japa.parser.ast.stmt.ExpressionStmt;
 import japa.parser.ast.stmt.Statement;
 import japa.parser.ast.stmt.TryStmt;
@@ -39,7 +40,8 @@ public class StatementVisitor extends VoidVisitorAdapter<Void> {
 				}
 			}else{
 				String[] ss = Options.I().getMethodUnderTest().split("\\(")[0].split("\\.");
-				if(n.toString().contains(ss[ss.length-1])) methodFound = true;
+				//FIXME non distingue i metodi override (ad es. add(o) add(1,o)
+				if(n.toString().contains("." + ss[ss.length-1] + "(")) methodFound = true;
 				stms.add(n);
 			}
 			

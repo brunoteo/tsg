@@ -1,81 +1,11 @@
 Stack stack0 = new Stack();
-stack1.addElement((Object) 10);
-boolean b0 = stack0.addAll((Collection) stack1);
-stack2.addElement((Object) 10);
-Object obj0 = stack2.peek();
+Object obj0 = stack0.push((Object) (-1));
+stack0.trimToSize();
 
 
 
 Stack stack0 = new Stack();
-stack0.addElement((Object) 10);
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 1);
-stack1.addElement((Object) 10);
-Object obj1 = stack1.peek();
-
-
-
-Stack stack0 = new Stack();
-stack0.addElement((Object) 10);
-stack2.addElement((Object) 10);
-boolean b0 = stack1.addAll((Collection) stack2);
-boolean b1 = stack0.addAll(0, (Collection) stack1);
-stack4.addElement((Object) 10);
-boolean b2 = stack3.addAll((Collection) stack4);
-stack5.addElement((Object) 10);
-Object obj0 = stack5.peek();
-
-
-
-Stack stack0 = new Stack();
-stack0.addElement((Object) 10);
-stack1.addElement((Object) 10);
-Object obj0 = stack1.peek();
-
-
-
-Stack stack0 = new Stack();
-stack0.addElement((Object) 10);
-Object obj0 = stack0.push((Object) 0);
-stack0.add(0, (Object) 1);
-Object obj1 = stack0.peek();
-
-
-
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 10, 0);
-boolean b0 = stack0.add((Object) 0);
-stack2.addElement((Object) 10);
-boolean b1 = stack1.addAll((Collection) stack2);
-boolean b2 = stack0.addAll(0, (Collection) stack2);
-stack4.addElement((Object) 10);
-boolean b3 = stack3.addAll((Collection) stack4);
-Object obj0 = stack3.peek();
-
-
-
-Stack stack0 = new Stack();
-stack0.addElement((Object) 10);
-Object obj0 = stack0.peek();
-
-
-
-Stack stack0 = new Stack();
-stack1.addElement((Object) 10);
-boolean b0 = stack0.addAll((Collection) stack1);
-Object obj0 = stack0.peek();
-
-
-
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 10, 0);
-boolean b0 = stack0.add((Object) 0);
-stack2.addElement((Object) 10);
-boolean b1 = stack1.addAll((Collection) stack2);
-boolean b2 = stack0.addAll(0, (Collection) stack2);
-Object obj0 = stack0.pop();
-stack3.addElement((Object) 10);
-Object obj1 = stack3.peek();
+stack0.trimToSize();
 
 
 
