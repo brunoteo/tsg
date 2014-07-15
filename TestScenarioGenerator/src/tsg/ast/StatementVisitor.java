@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import tsg.option.Options;
-import japa.parser.ast.expr.Expression;
+import tsg.util.ClassUtil;
 import japa.parser.ast.stmt.ExpressionStmt;
 import japa.parser.ast.stmt.Statement;
 import japa.parser.ast.stmt.TryStmt;
@@ -21,8 +21,7 @@ public class StatementVisitor extends VoidVisitorAdapter<Void> {
 	
 	public StatementVisitor() {
 		stms = new ArrayList<Statement>();
-		String[] helpTargetClass = Options.I().getTargetClass().split("/");
-		targetClass = helpTargetClass[helpTargetClass.length-1].split("\\.")[0];
+		targetClass = ClassUtil.getClassName(Options.I().getTargetClass());
 	}
 
 	@Override
@@ -33,15 +32,22 @@ public class StatementVisitor extends VoidVisitorAdapter<Void> {
 	
 	public void visit(final ExpressionStmt n, final Void arg) {
 		if(!tryFound && !methodFound) {
-			if(n.toString().split(" ")[0].equals(targetClass)) {
+			if(n.toString().startsWith("assert")) {
+				
+			}
+			else if(n.toString().split(" ")[0].equals(targetClass)) {
 				if(!consFound) {
 					consFound = true;
 					stms.add(n);
 				}
 			}else{
-				String[] ss = Options.I().getMethodUnderTest().split("\\(")[0].split("\\.");
-				//FIXME non distingue i metodi override (ad es. add(o) add(1,o)
-				if(n.toString().contains("." + ss[ss.length-1] + "(")) methodFound = true;
+				String methodNameMUT = ClassUtil.getMethodName(Options.I().getMethodUnderTest());
+				String methodName = ClassUtil.getMethodName(n.toString());
+				if(methodName.equals(methodNameMUT)) {
+					int numParMUT = ClassUtil.getNumParameters(Options.I().getMethodUnderTest());
+					int numPar = ClassUtil.getNumParameters(n.toString());
+					if(numParMUT == numPar) methodFound = true;
+				}
 				stms.add(n);
 			}
 			

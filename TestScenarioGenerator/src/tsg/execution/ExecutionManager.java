@@ -24,7 +24,6 @@ public class ExecutionManager {
 		boolean result = false;
 		
 		try {
-			//FIXME tempo sparato a caso
 			result = executor.awaitTermination(1000, TimeUnit.SECONDS);
 		} catch (InterruptedException e) {
 			logger.fatal("Timeout during pure methods generation");

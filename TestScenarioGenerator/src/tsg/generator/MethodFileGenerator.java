@@ -7,14 +7,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.text.html.Option;
 
 import tsg.execution.InternalClassloader;
 import tsg.logging.Logger;
 import tsg.option.Options;
+import tsg.util.ClassUtil;
 
 public class MethodFileGenerator {
 	
@@ -45,12 +45,9 @@ public class MethodFileGenerator {
 	
 	public void generateMethods() throws Exception {
 		Class<?> c;
-		String methodStr = "";
-		String constructorStr = "";
 		String targetClass = Options.I().getTargetClass();
 		
-		//TODO fare un utility
-		targetClass = targetClass.replaceAll(".java", "").replaceAll("/", ".");
+		targetClass = ClassUtil.convertClass(targetClass);
 		logger.info("Generating methods.csv for Randoop");
 		logger.debug("Class to be invetigated: " + targetClass);
 		
@@ -62,9 +59,8 @@ public class MethodFileGenerator {
 		
 		Constructor[] constructors = c.getDeclaredConstructors();
 		for(Constructor constructor : constructors) {
-			constructorStr = constructor.toGenericString();
-			//TODO utility
-			constructorList.add(constructorStr.substring(constructorStr.indexOf(constructor.getName())));
+			
+			constructorList.add(ClassUtil.getConstructorName(constructor));
 		}
 		logger.debug("Found: " + constructorList.size() + " constructors");
 		
@@ -77,11 +73,8 @@ public class MethodFileGenerator {
 					!method.isSynthetic() &&
 					!isBlacklist(method)) {
 							
-					//TODO fare un utility
 					//FIXME Sistemare Object[] con L ecc..
-					methodStr = method.toString();
-					methodStr = methodStr.substring(methodStr.indexOf(method.getDeclaringClass().toString().split(" ")[1]));
-					methodsList.add(methodStr);
+					methodsList.add(ClassUtil.getMethodName(method));
 				}
 		}
 		logger.debug("Found: " + methodsList.size() + " methods");
@@ -89,20 +82,14 @@ public class MethodFileGenerator {
 	
 	public void removePureMethods(List<String> pureMethods) {
 		logger.debug("Remove pure methods");
-		//TODO utility
-		String[] tmpS = Options.I().getMethodUnderTest().split("\\(")[0].split("\\.");
-		String methodUnderTest = "." + tmpS[tmpS.length-1] + "(";
+		String methodUnderTest = "." + ClassUtil.getMethodName(Options.I().getMethodUnderTest()) + "(";
 		
 		for(String pureMethod : pureMethods) {
 			//FIXME rivedere non va bene con gli override
-			tmpS = pureMethod.split("\\(")[0].split("\\.");
-			String pureMethodName = "." + tmpS[tmpS.length-1] + "(";
+			String pureMethodName = "." + ClassUtil.getMethodName(pureMethod) + "(";
 			if (!pureMethodName.equals(methodUnderTest)) {
 				methodsList.remove(pureMethod);
 			}
-//			if(pureMethod.equals(Options.I().getMethodUnderTest())) {
-//				methodsList.remove(pureMethod);
-//			}
 			
 		}
 		logger.debug("Found: " + methodsList.size() + " non-pure methods");
@@ -140,11 +127,15 @@ public class MethodFileGenerator {
 	}
 	
 	private boolean isBlacklist(Method method) {
-		//FIXME non deve cancellare il metodo under test
-		String[] tmpS = Options.I().getMethodUnderTest().split("\\(")[0].split("\\.");
-		String methodName = tmpS[tmpS.length-1];
-		if(method.getName().equals(methodName))
-			return false;
+		//FIXME risolvere gli override con un parametro
+		String methodName = ClassUtil.getMethodName(Options.I().getMethodUnderTest());
+		
+		if(method.getName().equals(methodName)) {
+			int numParMUT = ClassUtil.getNumParameters(Options.I().getMethodUnderTest());
+			Type[] numPar = method.getGenericParameterTypes();
+			if(numPar.length == numParMUT) return false;
+		}
+		
 		for(String black : blackList) {
 			if (method.getName().contains(black)) {
 				return true;
