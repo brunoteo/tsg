@@ -1,118 +1,122 @@
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.add(1, (Object) 100);
-Object obj1 = stack0.remove(0);
-
-
-
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.setSize(1);
 boolean b0 = stack0.add((Object) 10);
-stack0.setElementAt((Object) 0, 0);
-boolean b1 = stack0.remove((Object) 10);
-
-
-
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
 stack0.setSize(1);
-Object obj1 = stack0.push((Object) 1);
-stack0.setSize(1);
-boolean b0 = stack0.addAll((Collection) stack0);
-boolean b1 = stack0.remove((Object) (-1));
+int i4 = stack0.indexOf((Object) (-1));
 
 
 
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.setSize(1);
-boolean b0 = stack0.add((Object) 10);
-stack0.setSize(100);
-stack0.insertElementAt((Object) 1, 10);
-stack0.setSize(0);
-boolean b1 = stack0.remove((Object) 10);
-
-
-
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.add(1, (Object) 100);
-boolean b0 = stack0.remove((Object) 1);
-
-
-
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 1);
+stack0.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.add((Object) 100);
 boolean b1 = stack0.addAll((Collection) stack0);
-boolean b2 = stack0.remove((Object) (-1));
-
-
-
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.setSize(1);
-Object obj1 = stack0.push((Object) 10);
-Object obj2 = stack0.push((Object) 1);
-stack0.setSize(1);
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack0.add((Object) 1);
-boolean b2 = stack0.addAll((Collection) stack0);
-boolean b3 = stack0.addAll((Collection) stack0);
-Object obj3 = stack0.push((Object) (-1));
-boolean b4 = stack0.addAll((Collection) stack0);
-Object obj4 = stack0.remove(0);
-
-
-
-Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.setSize(1);
-boolean b0 = stack0.add((Object) 10);
 stack0.setSize(100);
+Object obj0 = stack0.set(10, (Object) 1);
+stack0.insertElementAt((Object) (-1), 1);
 Object obj1 = stack0.push((Object) 1);
-stack0.setSize(1);
-boolean b1 = stack0.add((Object) 10);
-stack0.setElementAt((Object) 0, 0);
-boolean b2 = stack0.addAll(0, (Collection) stack0);
-Object obj2 = stack0.push((Object) (-1));
-boolean b3 = stack0.remove((Object) 100);
+stack0.insertElementAt((Object) 10, 10);
+stack0.setSize(0);
+int i13 = stack0.indexOf((Object) 1);
 
 
 
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.setSize(1);
+stack0.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.add((Object) 100);
+boolean b1 = stack0.addAll((Collection) stack0);
+boolean b2 = stack0.add((Object) 1);
+boolean b3 = stack0.addAll((Collection) stack0);
+int i5 = stack0.indexOf((Object) 1);
+
+
+
+Stack stack0 = new Stack();
+stack0.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.add((Object) 100);
+boolean b1 = stack0.addAll((Collection) stack0);
+stack0.setSize(100);
+Object obj0 = stack0.set(10, (Object) 1);
+Object obj1 = stack0.push((Object) (-1));
+Object obj2 = stack0.set(1, (Object) (-1));
+boolean b2 = stack0.add((Object) 1);
+int i11 = stack0.indexOf((Object) 10);
+
+
+
+Stack stack0 = new Stack();
 boolean b0 = stack0.add((Object) 10);
-stack0.setElementAt((Object) 0, 0);
-boolean b1 = stack0.remove((Object) 0);
+stack0.setSize(1);
+int i3 = stack0.indexOf((Object) (-1));
 
 
 
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.setSize(1);
-Object obj1 = stack0.push((Object) 10);
-stack0.setElementAt((Object) 0, 0);
-Object obj2 = stack0.set(1, (Object) 10);
-stack0.addElement((Object) 1);
-stack0.add(1, (Object) 0);
-Object obj3 = stack0.remove(0);
+stack0.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.add((Object) 100);
+boolean b1 = stack0.addAll((Collection) stack0);
+int i4 = stack0.indexOf((Object) 1);
 
 
 
 Stack stack0 = new Stack();
-Object obj0 = stack0.push((Object) 1);
-stack0.setSize(1);
 boolean b0 = stack0.add((Object) 10);
-Object obj1 = stack0.set(1, (Object) 1);
-boolean b1 = stack0.remove((Object) 10);
+boolean b1 = stack0.add((Object) 100);
+int i4 = stack0.indexOf((Object) 10);
 
 
 
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 1);
-boolean b1 = stack0.remove((Object) 100);
+stack0.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.add((Object) 100);
+boolean b1 = stack0.addAll((Collection) stack0);
+int i4 = stack0.indexOf((Object) (-1));
+
+
+
+Stack stack0 = new Stack();
+boolean b0 = stack0.add((Object) 100);
+int i2 = stack0.indexOf((Object) 10);
+
+
+
+Stack stack0 = new Stack();
+stack0.insertElementAt((Object) 1, 0);
+stack0.setSize(10);
+Object obj0 = stack0.set(0, (Object) 1);
+boolean b0 = stack0.add((Object) 100);
+int i7 = stack0.indexOf((Object) 10);
+
+
+
+Stack stack0 = new Stack();
+boolean b0 = stack0.add((Object) 100);
+boolean b1 = stack0.add((Object) 100);
+int i3 = stack0.indexOf((Object) 10);
+
+
+
+Stack stack0 = new Stack();
+stack0.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.add((Object) 100);
+boolean b1 = stack0.addAll((Collection) stack0);
+stack0.setSize(100);
+Object obj0 = stack0.set(10, (Object) 1);
+int i7 = stack0.indexOf((Object) 0);
+
+
+
+Stack stack0 = new Stack();
+stack0.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.add((Object) 100);
+boolean b1 = stack0.addAll((Collection) stack0);
+int i4 = stack0.indexOf((Object) 10);
+
+
+
+Stack stack0 = new Stack();
+stack0.insertElementAt((Object) 1, 0);
+stack0.setSize(10);
+Object obj0 = stack0.set(0, (Object) 1);
+int i6 = stack0.indexOf((Object) (-1));
 
 
 

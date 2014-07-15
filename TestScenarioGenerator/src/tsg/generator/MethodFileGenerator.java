@@ -85,9 +85,12 @@ public class MethodFileGenerator {
 		String methodUnderTest = "." + ClassUtil.getMethodName(Options.I().getMethodUnderTest()) + "(";
 		
 		for(String pureMethod : pureMethods) {
-			//FIXME rivedere non va bene con gli override
 			String pureMethodName = "." + ClassUtil.getMethodName(pureMethod) + "(";
-			if (!pureMethodName.equals(methodUnderTest)) {
+			if (pureMethodName.equals(methodUnderTest)) {
+				int numParMUT = ClassUtil.getNumParameters(Options.I().getMethodUnderTest());
+				int numPar = ClassUtil.getNumParameters(pureMethod);
+				if(numPar != numParMUT)	methodsList.remove(pureMethod);
+			}else{
 				methodsList.remove(pureMethod);
 			}
 			
