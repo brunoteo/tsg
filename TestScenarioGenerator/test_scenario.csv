@@ -1,460 +1,210 @@
-System.out.println("%nRandoopTest0.test6");
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 1);
-
-
-
 System.out.println("%nRandoopTest0.test10");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test11");
-Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-stack0.setSize(100);
-Object obj0 = stack0.set(10, (Object) 1);
-int i7 = stack0.indexOf((Object) 0);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test12");
 Stack stack0 = new Stack();
+boolean b0 = stack0.add((Object) 100);
+Object obj0 = stack0.remove(0);
+
+
+
+System.out.println("%nRandoopTest0.test16");
+Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-stack0.setSize(100);
-Object obj0 = stack0.set(10, (Object) 1);
-int i7 = stack0.indexOf((Object) 0);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test17");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) (-1));
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack0.remove(1);
 
 
 
-System.out.println("%nRandoopTest0.test20");
+System.out.println("%nRandoopTest0.test18");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 1);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test21");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-stack0.setSize(1);
-int i3 = stack0.indexOf((Object) (-1));
-
-
-
-System.out.println("%nRandoopTest0.test23");
-Stack stack0 = new Stack();
-boolean b0 = stack1.add((Object) 10);
-stack1.setSize(1);
-int i4 = stack1.indexOf((Object) (-1));
-
-
-
-System.out.println("%nRandoopTest0.test25");
-Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-stack0.setSize(10);
-Object obj0 = stack0.set(0, (Object) 1);
-boolean b0 = stack1.add((Object) 100);
-int i7 = stack1.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test26");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-stack0.setSize(10);
-Object obj0 = stack0.set(0, (Object) 1);
-boolean b0 = stack1.add((Object) 100);
-int i7 = stack1.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test28");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-stack0.setSize(1);
-int i3 = stack0.indexOf((Object) (-1));
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test29");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
+stack0.insertElementAt((Object) 1, 0);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test30");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
+stack0.insertElementAt((Object) 1, 0);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
-System.out.println("%nRandoopTest0.test31");
+System.out.println("%nRandoopTest0.test33");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 1);
-
-
-
-System.out.println("%nRandoopTest0.test34");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test35");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-stack0.setSize(1);
-int i3 = stack0.indexOf((Object) (-1));
-
-
-
-System.out.println("%nRandoopTest0.test37");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-stack0.setSize(1);
-int i3 = stack0.indexOf((Object) (-1));
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test38");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test41");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-boolean b1 = stack1.add((Object) 100);
-int i3 = stack1.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test43");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test45");
-Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-stack0.setSize(10);
-Object obj0 = stack0.set(0, (Object) 1);
-boolean b0 = stack1.add((Object) 100);
-int i7 = stack1.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test47");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-boolean b1 = stack1.add((Object) 100);
-int i3 = stack1.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test50");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-boolean b1 = stack1.add((Object) 100);
-int i3 = stack1.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test51");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-stack0.setSize(1);
-int i3 = stack0.indexOf((Object) (-1));
-
-
-
-System.out.println("%nRandoopTest0.test52");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test54");
-Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-stack0.setSize(10);
-Object obj0 = stack0.set(0, (Object) 1);
-boolean b0 = stack1.add((Object) 100);
-int i7 = stack1.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
-System.out.println("%nRandoopTest0.test55");
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-stack0.setSize(100);
-Object obj0 = stack0.set(10, (Object) 1);
-int i7 = stack0.indexOf((Object) 0);
-
-
-
-System.out.println("%nRandoopTest0.test57");
+System.out.println("%nRandoopTest0.test56");
 Stack stack0 = new Stack();
 boolean b0 = stack0.add((Object) 100);
-boolean b1 = stack1.add((Object) 100);
-int i3 = stack1.indexOf((Object) 10);
+Object obj0 = stack0.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test59");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 1);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test63");
 Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 1, 0);
-stack0.setSize(10);
-Object obj0 = stack0.set(0, (Object) 1);
-int i6 = stack0.indexOf((Object) (-1));
-
-
-
-System.out.println("%nRandoopTest0.test65");
-Stack stack0 = new Stack();
 boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test66");
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-stack0.setSize(100);
-Object obj0 = stack0.set(10, (Object) 1);
-stack0.insertElementAt((Object) (-1), 1);
-Object obj1 = stack0.push((Object) 1);
-stack0.insertElementAt((Object) 10, 10);
-stack0.setSize(0);
-int i13 = stack0.indexOf((Object) 1);
-
-
-
-System.out.println("%nRandoopTest0.test67");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-stack0.setSize(1);
-int i3 = stack0.indexOf((Object) (-1));
-
-
-
-System.out.println("%nRandoopTest0.test71");
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 1);
-
-
-
-System.out.println("%nRandoopTest0.test72");
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-boolean b2 = stack2.add((Object) 1);
-boolean b3 = stack0.addAll((Collection) stack2);
-int i5 = stack2.indexOf((Object) 1);
-
-
-
-System.out.println("%nRandoopTest0.test73");
-Stack stack0 = new Stack();
-stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) (-1));
+Object obj0 = stack0.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test74");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
+stack0.insertElementAt((Object) 1, 0);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
-System.out.println("%nRandoopTest0.test75");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test76");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test78");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 10);
-boolean b1 = stack1.add((Object) 100);
-int i4 = stack1.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test81");
+System.out.println("%nRandoopTest0.test79");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack0.remove(1);
 
 
 
 System.out.println("%nRandoopTest0.test82");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-boolean b2 = stack2.add((Object) 1);
-boolean b3 = stack0.addAll((Collection) stack2);
-int i5 = stack2.indexOf((Object) 1);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
-System.out.println("%nRandoopTest0.test83");
+System.out.println("%nRandoopTest0.test86");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-stack0.setSize(10);
-Object obj0 = stack0.set(0, (Object) 1);
-boolean b0 = stack1.add((Object) 100);
-int i7 = stack1.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
-System.out.println("%nRandoopTest0.test84");
+System.out.println("%nRandoopTest0.test87");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
-System.out.println("%nRandoopTest0.test90");
+System.out.println("%nRandoopTest0.test89");
 Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
+stack0.insertElementAt((Object) 1, 0);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test92");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-stack0.setSize(100);
-Object obj0 = stack0.set(10, (Object) 1);
-Object obj1 = stack0.push((Object) (-1));
-Object obj2 = stack0.set(1, (Object) (-1));
-boolean b2 = stack0.add((Object) 1);
-int i11 = stack0.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
-System.out.println("%nRandoopTest0.test93");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test94");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test95");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test96");
+System.out.println("%nRandoopTest0.test99");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-stack0.setSize(100);
-Object obj0 = stack0.set(10, (Object) 1);
-int i7 = stack0.indexOf((Object) 0);
-
-
-
-System.out.println("%nRandoopTest0.test97");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-int i2 = stack0.indexOf((Object) 10);
-
-
-
-System.out.println("%nRandoopTest0.test98");
-Stack stack0 = new Stack();
-boolean b0 = stack0.add((Object) 100);
-boolean b1 = stack1.add((Object) 100);
-int i3 = stack1.indexOf((Object) 10);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 
 System.out.println("%nRandoopTest0.test100");
 Stack stack0 = new Stack();
 stack0.insertElementAt((Object) 1, 0);
-boolean b0 = stack1.add((Object) 100);
-boolean b1 = stack0.addAll((Collection) stack1);
-int i4 = stack0.indexOf((Object) 1);
+stack1.insertElementAt((Object) 1, 0);
+boolean b0 = stack0.addAll((Collection) stack1);
+Object obj0 = stack1.remove(0);
 
 
 

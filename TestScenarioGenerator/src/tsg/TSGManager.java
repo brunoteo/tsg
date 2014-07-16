@@ -23,7 +23,6 @@ public class TSGManager {
 		pureMethodGenerator.readPureMethods();
 		
 		// ======================= CREATE RANDOOP METHODS FILE ========================
-		//TODO creare directory per il file
 		MethodFileGenerator methodFileGenerator = MethodFileGenerator.getInstance();
 		methodFileGenerator.generateMethods();
 		methodFileGenerator.removePureMethods(pureMethodGenerator.getPureMethods());

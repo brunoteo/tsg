@@ -37,4 +37,9 @@ public class ClassUtil {
 		String constructorStr = c.toGenericString();
 		return constructorStr.substring(constructorStr.indexOf(c.getName()));
 	}
+	
+	public static String getMethodString(Method m) {
+		String[] tmp = m.toGenericString().split(" ");
+		return tmp[tmp.length-1];
+	}
 }

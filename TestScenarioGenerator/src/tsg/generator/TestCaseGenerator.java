@@ -49,7 +49,7 @@ public class TestCaseGenerator {
 		logger.debug(result.getStderr());
 		
 		logger.debug("Check whether the generation was successful");
-		//TODO controllare che esista il file pure-methods.csv
+		//TODO controllare che esista il file RandoopTest0.csv
 		if (result.getExitStatus() != 0) {
 			throw new Exception("Generation failed due " + result.getStdout() + System.lineSeparator() + result.getStderr());
 		}
@@ -114,7 +114,7 @@ public class TestCaseGenerator {
 		
 	}
 
-	//FIXME non servono (solo test)
+	//TODO non servono (solo test)
 	public void createTestScenarioFile() {
 		String outputFile = "test_scenario.csv";
 		logger.debug("Creating test_scenario.csv");
@@ -148,7 +148,7 @@ public class TestCaseGenerator {
 		}
 	}
 	
-	//FIXME non servono (solo test)
+	//TODO non servono (solo test)
 	public void createTestScenarioFile2() {
 		String outputFile = "test_scenario_reduced.csv";
 		logger.debug("Creating test_scenario_reduced.csv");
