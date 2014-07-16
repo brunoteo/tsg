@@ -18,7 +18,7 @@ public class ClassUtil {
 	public static int getNumParameters(String m) {
 		int startParams = m.indexOf("(");
 		String params = m.substring(startParams);
-		params = params.replace("(", "").replace(")", "");
+		params = params.replace("(", "").replace(")", "").replace(";", "");
 		String[] tmpStr = params.split(",");
 		if(tmpStr[0].equals("")) return 0;
 		return tmpStr.length;
