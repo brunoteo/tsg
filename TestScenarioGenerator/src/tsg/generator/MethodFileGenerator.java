@@ -82,20 +82,11 @@ public class MethodFileGenerator {
 	
 	public void removePureMethods(List<String> pureMethods) {
 		logger.debug("Remove pure methods");
-//		String methodUnderTest = "." + ClassUtil.getMethodName(Options.I().getMethodUnderTest()) + "(";
 		
 		for(String pureMethod : pureMethods) {
 			if(!pureMethod.equals(Options.I().getMethodUnderTest())) {
 				methodsList.remove(pureMethod);
 			}
-//			String pureMethodName = "." + ClassUtil.getMethodName(pureMethod) + "(";
-//			if (pureMethodName.equals(methodUnderTest)) {
-//				int numParMUT = ClassUtil.getNumParameters(Options.I().getMethodUnderTest());
-//				int numPar = ClassUtil.getNumParameters(pureMethod);
-//				if(numPar != numParMUT)	methodsList.remove(pureMethod);
-//			}else{
-//				methodsList.remove(pureMethod);
-//			}
 			
 		}
 		logger.debug("Found: " + methodsList.size() + " non-pure methods");
@@ -133,16 +124,10 @@ public class MethodFileGenerator {
 	}
 	
 	private boolean isBlacklist(Method method) {
-//		String methodName = ClassUtil.getMethodName(Options.I().getMethodUnderTest());
 		String methodName = ClassUtil.getMethodString(method);
 		if(methodName.equals(Options.I().getMethodUnderTest())){
 			return false;
 		}
-//		if(method.getName().equals(methodName)) {
-//			int numParMUT = ClassUtil.getNumParameters(Options.I().getMethodUnderTest());
-//			Type[] numPar = method.getGenericParameterTypes();
-//			if(numPar.length == numParMUT) return false;
-//		}
 		
 		for(String black : blackList) {
 			if (method.getName().contains(black)) {

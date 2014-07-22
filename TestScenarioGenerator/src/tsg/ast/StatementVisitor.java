@@ -30,24 +30,27 @@ public class StatementVisitor extends VoidVisitorAdapter<Void> {
 		super.visit(n, arg);
 	}
 	
+	//FIXME sistemare overload un parametro
 	public void visit(final ExpressionStmt n, final Void arg) {
 		if(!tryFound && !methodFound) {
 			if(!n.toString().startsWith("assert")) {	
 				if(n.toString().startsWith(targetClass)) {
-//				if(n.toString().split(" ")[0].equals(targetClass)) {
 					if(!consFound) {
 						consFound = true;
 						stms.add(n);
 					}
 				}else{
-					String methodNameMUT = ClassUtil.getMethodName(Options.I().getMethodUnderTest());
-					String methodName = ClassUtil.getMethodName(n.toString());
-					if(methodName.equals(methodNameMUT)) {
-						int numParMUT = ClassUtil.getNumParameters(Options.I().getMethodUnderTest());
-						int numPar = ClassUtil.getNumParameters(n.toString());
-						if(numParMUT == numPar) methodFound = true;
+					String params = ClassUtil.getParameters(n.toString());
+					if(!params.contains("Collection")) {
+						String methodNameMUT = ClassUtil.getMethodName(Options.I().getMethodUnderTest());
+						String methodName = ClassUtil.getMethodName(n.toString());
+						if(methodName.equals(methodNameMUT)) {
+							int numParMUT = ClassUtil.getNumParameters(Options.I().getMethodUnderTest());
+							int numPar = ClassUtil.getNumParameters(n.toString());
+							if(numParMUT == numPar) methodFound = true;
+						}
+						stms.add(n);
 					}
-					stms.add(n);
 				}
 			}
 			

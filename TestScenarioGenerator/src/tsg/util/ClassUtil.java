@@ -24,6 +24,12 @@ public class ClassUtil {
 		return tmpStr.length;
 	}
 	
+	public static String getParameters(String e) {
+		String params = e.substring(e.indexOf("("));
+		params = params.substring(0, params.length()-1);
+		return params;
+	}
+	
 	public static String getClassName(String c) {
 		String[] helpTargetClass = c.split("/");
 		return helpTargetClass[helpTargetClass.length-1].split("\\.")[0];

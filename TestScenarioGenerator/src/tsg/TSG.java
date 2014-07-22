@@ -33,7 +33,7 @@ public class TSG {
 
 			logger.info("TSG ended successfully");
 		}
-		//FIXME sistemare l'eccezione Execption
+		//TODO sistemare l'eccezione Execption
 		catch (Exception e) {
 			logger.fatal("Execution aborted due: " + e.getMessage());
 		}
