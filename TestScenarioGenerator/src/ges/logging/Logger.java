@@ -1,4 +1,4 @@
-package tsg.logging;
+package ges.logging;
 
 import java.io.PrintStream;
 import java.text.SimpleDateFormat;

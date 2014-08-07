@@ -1,14 +1,14 @@
-package tsg;
+package ges;
 
-import tsg.generator.MethodFileGenerator;
-import tsg.generator.PureMethodGenerator;
-import tsg.generator.TestCaseGenerator;
-import tsg.logging.Logger;
+import ges.generator.MethodFileGenerator;
+import ges.generator.PureMethodGenerator;
+import ges.generator.TestCaseGenerator;
+import ges.logging.Logger;
 
-public class TSGManager {
-	private static final Logger logger = new Logger(TSGManager.class);
+public class GESManager {
+	private static final Logger logger = new Logger(GESManager.class);
 
-	public TSGManager() {
+	public GESManager() {
 		//TODO statistics
 	}
 	

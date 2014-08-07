@@ -1,9 +1,9 @@
-package tsg.randoop;
+package ges.randoop;
+
+import ges.option.Options;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import tsg.option.Options;
 
 public class Randoop {
 	

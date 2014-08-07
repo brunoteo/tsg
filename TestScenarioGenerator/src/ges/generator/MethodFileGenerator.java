@@ -1,4 +1,9 @@
-package tsg.generator;
+package ges.generator;
+
+import ges.execution.InternalClassloader;
+import ges.logging.Logger;
+import ges.option.Options;
+import ges.util.ClassUtil;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,11 +15,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-
-import tsg.execution.InternalClassloader;
-import tsg.logging.Logger;
-import tsg.option.Options;
-import tsg.util.ClassUtil;
 
 public class MethodFileGenerator {
 	
@@ -130,7 +130,8 @@ public class MethodFileGenerator {
 		}
 		
 		for(String black : blackList) {
-			if (method.getName().contains(black)) {
+//			if (method.getName().contains(black)) {
+			if (method.toString().contains(black)) {
 				return true;
 			}
 		}

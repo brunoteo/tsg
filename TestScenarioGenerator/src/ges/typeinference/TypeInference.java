@@ -1,9 +1,9 @@
-package tsg.typeinference;
+package ges.typeinference;
+
+import ges.option.Options;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import tsg.option.Options;
 
 public class TypeInference {
 	

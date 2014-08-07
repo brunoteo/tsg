@@ -1,4 +1,7 @@
-package tsg;
+package ges;
+
+import ges.logging.Logger;
+import ges.option.Options;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,12 +11,9 @@ import java.util.regex.Pattern;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 
-import tsg.logging.Logger;
-import tsg.option.Options;
 
-
-public class TSG {
-	private static final Logger logger = new Logger(TSG.class);
+public class GES {
+	private static final Logger logger = new Logger(GES.class);
 	
 	public static void main(String[] args) {
 		logger.info("TSG started");
@@ -28,7 +28,7 @@ public class TSG {
 		}
 		
 		try {
-			TSGManager generator = new TSGManager();
+			GESManager generator = new GESManager();
 			generator.generateTS();
 
 			logger.info("TSG ended successfully");

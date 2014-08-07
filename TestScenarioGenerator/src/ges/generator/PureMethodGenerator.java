@@ -1,4 +1,10 @@
-package tsg.generator;
+package ges.generator;
+
+import ges.execution.ExecutionManager;
+import ges.execution.ExecutionResult;
+import ges.logging.Logger;
+import ges.option.Options;
+import ges.typeinference.TypeInference;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -7,12 +13,6 @@ import java.io.IOError;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import tsg.execution.ExecutionManager;
-import tsg.execution.ExecutionResult;
-import tsg.logging.Logger;
-import tsg.option.Options;
-import tsg.typeinference.TypeInference;
 
 
 public class PureMethodGenerator {

@@ -1,13 +1,13 @@
-package tsg.execution;
+package ges.execution;
+
+import ges.logging.Logger;
+import ges.option.Options;
+import ges.typeinference.TypeInference;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.Callable;
-
-import tsg.logging.Logger;
-import tsg.option.Options;
-import tsg.typeinference.TypeInference;
 
 public class WorkerTypeInference implements Callable<ExecutionResult>{
 
