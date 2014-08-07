@@ -1,7 +1,7 @@
-package ges.ast;
+package esg.ast;
 
-import ges.option.Options;
-import ges.util.ClassUtil;
+import esg.option.Options;
+import esg.util.ClassUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +42,7 @@ public class StatementVisitor extends VoidVisitorAdapter<Void> {
 					}
 				}else{
 					String params = ClassUtil.getParameters(n.toString());
+					//Si ha problemi con i metodi con parametro Collection
 					if(!params.contains("Collection")) {
 						String methodNameMUT = ClassUtil.getMethodName(Options.I().getMethodUnderTest());
 						String methodName = ClassUtil.getMethodName(n.toString());

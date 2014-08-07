@@ -1,4 +1,4 @@
-package ges.ast;
+package esg.ast;
 
 import japa.parser.ast.body.MethodDeclaration;
 import japa.parser.ast.visitor.VoidVisitorAdapter;

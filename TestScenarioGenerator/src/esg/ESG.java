@@ -1,7 +1,7 @@
-package ges;
+package esg;
 
-import ges.logging.Logger;
-import ges.option.Options;
+import esg.logging.Logger;
+import esg.option.Options;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +12,11 @@ import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 
 
-public class GES {
-	private static final Logger logger = new Logger(GES.class);
+public class ESG {
+	private static final Logger logger = new Logger(ESG.class);
 	
 	public static void main(String[] args) {
-		logger.info("TSG started");
+		logger.info("ESG started");
 		final Options arguments = Options.I();
 		final CmdLineParser parser = new CmdLineParser(arguments);
 		
@@ -28,10 +28,10 @@ public class GES {
 		}
 		
 		try {
-			GESManager generator = new GESManager();
+			ESGManager generator = new ESGManager();
 			generator.generateTS();
 
-			logger.info("TSG ended successfully");
+			logger.info("ESG ended successfully");
 		}
 		//TODO sistemare l'eccezione Execption
 		catch (Exception e) {

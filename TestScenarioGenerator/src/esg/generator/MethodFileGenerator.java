@@ -1,9 +1,9 @@
-package ges.generator;
+package esg.generator;
 
-import ges.execution.InternalClassloader;
-import ges.logging.Logger;
-import ges.option.Options;
-import ges.util.ClassUtil;
+import esg.execution.InternalClassloader;
+import esg.logging.Logger;
+import esg.option.Options;
+import esg.util.ClassUtil;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -46,7 +46,7 @@ public class MethodFileGenerator {
 	public void generateMethods() throws Exception {
 		Class<?> c;
 		String targetClass = Options.I().getTargetClass();
-		
+		//FIXME controllare se la classe ha Generics
 		targetClass = ClassUtil.convertClass(targetClass);
 		logger.info("Generating methods.csv for Randoop");
 		logger.debug("Class to be invetigated: " + targetClass);

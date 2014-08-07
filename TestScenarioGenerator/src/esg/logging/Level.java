@@ -1,4 +1,4 @@
-package ges.logging;
+package esg.logging;
 
 public enum Level {
 

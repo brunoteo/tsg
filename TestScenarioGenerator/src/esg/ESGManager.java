@@ -1,14 +1,14 @@
-package ges;
+package esg;
 
-import ges.generator.MethodFileGenerator;
-import ges.generator.PureMethodGenerator;
-import ges.generator.TestCaseGenerator;
-import ges.logging.Logger;
+import esg.generator.MethodFileGenerator;
+import esg.generator.PureMethodGenerator;
+import esg.generator.TestCaseGenerator;
+import esg.logging.Logger;
 
-public class GESManager {
-	private static final Logger logger = new Logger(GESManager.class);
+public class ESGManager {
+	private static final Logger logger = new Logger(ESGManager.class);
 
-	public GESManager() {
+	public ESGManager() {
 		//TODO statistics
 	}
 	

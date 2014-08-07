@@ -1,6 +1,6 @@
-package ges.typeinference;
+package esg.typeinference;
 
-import ges.option.Options;
+import esg.option.Options;
 
 import java.util.ArrayList;
 import java.util.List;

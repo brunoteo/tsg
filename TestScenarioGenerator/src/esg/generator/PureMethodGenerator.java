@@ -1,10 +1,10 @@
-package ges.generator;
+package esg.generator;
 
-import ges.execution.ExecutionManager;
-import ges.execution.ExecutionResult;
-import ges.logging.Logger;
-import ges.option.Options;
-import ges.typeinference.TypeInference;
+import esg.execution.ExecutionManager;
+import esg.execution.ExecutionResult;
+import esg.logging.Logger;
+import esg.option.Options;
+import esg.typeinference.TypeInference;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

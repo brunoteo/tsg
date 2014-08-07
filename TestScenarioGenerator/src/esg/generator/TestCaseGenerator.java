@@ -1,12 +1,13 @@
-package ges.generator;
+package esg.generator;
 
-import ges.ast.MethodVisitor;
-import ges.ast.StatementVisitor;
-import ges.execution.ExecutionManager;
-import ges.execution.ExecutionResult;
-import ges.logging.Logger;
-import ges.option.Options;
-import ges.randoop.Randoop;
+import esg.ast.MethodVisitor;
+import esg.ast.StatementVisitor;
+import esg.execution.ExecutionManager;
+import esg.execution.ExecutionResult;
+import esg.logging.Logger;
+import esg.option.Options;
+import esg.randoop.Randoop;
+import esg.util.ClassUtil;
 import japa.parser.JavaParser;
 import japa.parser.ParseException;
 import japa.parser.ast.CompilationUnit;
@@ -85,11 +86,11 @@ public class TestCaseGenerator {
 				
 			}
 			
-			createTestScenarioFile();
+//			createTestScenarioFile();
 			
 			testsStr = convertToString();
 			
-			logger.debug("Prima " + testsStr.size());
+//			logger.debug("Prima " + testsStr.size());
 			
 			changeVarName();
 			deleteEqual();
@@ -181,11 +182,12 @@ public class TestCaseGenerator {
 	
 	private List<String> convertToString() {
 		List<String> result = new ArrayList<String>();
+		String targetClass = ClassUtil.getClassName(Options.I().getTargetClass());
 		
 		for(List<Statement> stms : tests) {
 			StringBuilder strBld = new StringBuilder();
 			for(int i = 1; i < stms.size(); i++) {
-				strBld.append(stms.get(i).toString());
+				strBld.append(stms.get(i).toString().replaceAll(targetClass, targetClass+"<Integer>").replaceAll("\\(Object\\)", "").replaceAll("Object", "Integer"));
 				strBld.append('\n');
 			}
 			result.add(strBld.toString());

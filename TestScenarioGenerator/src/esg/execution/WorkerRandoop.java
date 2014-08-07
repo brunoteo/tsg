@@ -1,26 +1,25 @@
-package ges.execution;
+package esg.execution;
 
-import ges.logging.Logger;
-import ges.option.Options;
-import ges.typeinference.TypeInference;
+import esg.logging.Logger;
+import esg.option.Options;
+import esg.randoop.Randoop;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.Callable;
 
-public class WorkerTypeInference implements Callable<ExecutionResult>{
-
-	private static final Logger logger = new Logger(WorkerTypeInference.class);
+public class WorkerRandoop implements Callable<ExecutionResult>{
+private static final Logger logger = new Logger(WorkerTypeInference.class);
 	
-	private final TypeInference typeInference;
+	private final Randoop randoop;
 	
 	private int exitStatus;
 	private ByteArrayOutputStream errStream = null;
 	private ByteArrayOutputStream outStream = null;
 	
-	public WorkerTypeInference(TypeInference typeInference) {
-		this.typeInference = typeInference;
+	public WorkerRandoop(Randoop randoop) {
+		this.randoop = randoop;
 	}
 	
 	@Override
@@ -28,10 +27,10 @@ public class WorkerTypeInference implements Callable<ExecutionResult>{
 		ExecutionResult result = null;
 		
 		try {
-			ProcessBuilder pb = new ProcessBuilder(typeInference.getCommand());
-			pb = pb.directory(new File(Options.I().getTypeInferencePath()));
+			ProcessBuilder pb = new ProcessBuilder(randoop.getCommand());
+			pb = pb.directory(new File(Options.I().getRandoopDir()));
 
-			logger.debug("Going to execute: " + typeInference.toString());
+			logger.debug("Going to execute: " + randoop.toString());
 			Process process = pb.start();
 			this.errStream = new ByteArrayOutputStream();
 			this.outStream = new ByteArrayOutputStream();
@@ -44,11 +43,11 @@ public class WorkerTypeInference implements Callable<ExecutionResult>{
 			errThread.interrupt();
 			outThread.interrupt();
 
-			result = new ExecutionResult(Options.I().getTypeInferencePath());
-			result.setCommand(typeInference.getCommand());
+			result = new ExecutionResult(Options.I().getRandoopDir());
+			result.setCommand(randoop.getCommand());
 			result.setStdout(getOutStream());
 			result.setStderr(getErrStream());
-			result.setFilename("pure-methods.csv");		
+			result.setFilename("RandoopTest0.java");		
 			result.setExitStatus(this.exitStatus);
 		}
 		catch (IOException | InterruptedException e) {
@@ -70,7 +69,7 @@ public class WorkerTypeInference implements Callable<ExecutionResult>{
 		return this.outStream.toString();
 	}
 
-	public TypeInference getCommand() {
-		return this.typeInference;
+	public Randoop getCommand() {
+		return this.randoop;
 	}
 }

@@ -1,4 +1,4 @@
-package ges.logging;
+package esg.logging;
 
 import java.io.PrintStream;
 import java.text.SimpleDateFormat;
