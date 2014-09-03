@@ -1,55 +1,43 @@
 Stack<Integer> stack0 = new Stack<Integer>();
+stack0.addElement( 10);
+boolean b1 = stack0.add( 10);
+stack0.add(1,  0);
 stack0.addElement( 1);
-stack0.add(1,  1);
-boolean b0 = stack0.add( 0);
-Integer obj0 = stack0.push( 0);
-stack0.clear();
-
-
-
-Stack<Integer> stack0 = new Stack<Integer>();
-stack0.addElement( 1);
-stack0.add(1,  1);
-boolean b0 = stack0.add( 0);
-Integer obj0 = stack0.push( 100);
-stack0.clear();
-
-
-
-Stack<Integer> stack0 = new Stack<Integer>();
-stack0.addElement( 1);
-stack0.add(1,  1);
 stack0.addElement( (-1));
-stack0.clear();
+stack0.addElement( 10);
+boolean b2 = stack0.add( 1);
+Integer obj0 = stack0.set(0,  (-1));
 
 
 
 Stack<Integer> stack0 = new Stack<Integer>();
-stack0.clear();
-
-
-
-Stack<Integer> stack0 = new Stack<Integer>();
-stack0.addElement( 1);
-Integer obj0 = stack0.push( 1);
-Integer obj1 = stack0.set(0,  (-1));
-stack0.clear();
-
-
-
-Stack<Integer> stack0 = new Stack<Integer>();
+stack0.addElement( 10);
 boolean b0 = stack0.add( 1);
-stack0.insertElementAt( 100, 0);
-stack0.setSize(10);
-stack0.clear();
+stack0.addElement( (-1));
+stack0.add(1,  10);
+Integer obj0 = stack0.set(1,  0);
 
 
 
 Stack<Integer> stack0 = new Stack<Integer>();
-stack0.addElement( 1);
-stack0.add(1,  1);
-boolean b0 = stack0.add( 0);
-stack0.clear();
+stack0.addElement( 10);
+Integer obj0 = stack0.push( 100);
+stack0.insertElementAt( 1, 0);
+stack0.addElement( 10);
+Integer obj1 = stack0.push( 100);
+stack0.insertElementAt( 1, 0);
+stack0.addElement( 10);
+Integer obj2 = stack0.set(1,  0);
+
+
+
+Stack<Integer> stack0 = new Stack<Integer>();
+stack0.addElement( 10);
+boolean b0 = stack0.add( 1);
+stack0.addElement( (-1));
+stack0.add(1,  10);
+stack0.add(0,  10);
+Integer obj0 = stack0.set(0,  100);
 
 
 

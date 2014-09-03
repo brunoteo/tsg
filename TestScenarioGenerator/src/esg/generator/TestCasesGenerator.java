@@ -22,22 +22,22 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-public class TestCaseGenerator {
+public class TestCasesGenerator {
 	
-	private static final Logger logger = new Logger(TestCaseGenerator.class);
+	private static final Logger logger = new Logger(TestCasesGenerator.class);
 	
-	private static TestCaseGenerator instance;
+	private static TestCasesGenerator instance;
 	
 	private final List<List<Statement>> tests;
 	private List<String> testsStr = null;
 
-	public TestCaseGenerator() {
+	public TestCasesGenerator() {
 		this.tests = new ArrayList<List<Statement>>();
 	}
 	
-	public static TestCaseGenerator getInstance() {
+	public static TestCasesGenerator getInstance() {
 		if (instance == null) {
-			instance = new TestCaseGenerator();
+			instance = new TestCasesGenerator();
 		}
 		return instance;
 	}

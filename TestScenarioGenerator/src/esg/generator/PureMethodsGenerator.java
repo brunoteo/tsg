@@ -15,21 +15,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class PureMethodGenerator {
+public class PureMethodsGenerator {
 	
-	private static final Logger logger = new Logger(PureMethodGenerator.class);
+	private static final Logger logger = new Logger(PureMethodsGenerator.class);
 	
-	private static PureMethodGenerator instance;
+	private static PureMethodsGenerator instance;
 	
 	private List<String> pureMethods;
 	
-	private PureMethodGenerator() {
+	private PureMethodsGenerator() {
 		pureMethods = new ArrayList<String>();
 	}
 	
-	public static PureMethodGenerator getInstance() {
+	public static PureMethodsGenerator getInstance() {
 		if (instance == null) {
-			instance = new PureMethodGenerator();
+			instance = new PureMethodsGenerator();
 		}
 		return instance;
 	}

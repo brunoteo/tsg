@@ -16,12 +16,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MethodFileGenerator {
+public class MethodsFileGenerator {
 	
-	private static final Logger logger = new Logger(MethodFileGenerator.class);
+	private static final Logger logger = new Logger(MethodsFileGenerator.class);
 	
 	private final ClassLoader classLoader;
-	private static MethodFileGenerator instance;
+	private static MethodsFileGenerator instance;
 	
 	private List<String> methodsList;
 	private List<String> constructorList;
@@ -29,16 +29,16 @@ public class MethodFileGenerator {
 	
 	private String outputFile = Options.I().getRandoopDir() + "methods.csv";
 	
-	private MethodFileGenerator() throws Exception {
+	private MethodsFileGenerator() throws Exception {
 		InternalClassloader ic = new InternalClassloader(Options.I().getOutputDir());
 		this.classLoader = ic.getClassLoader();
 		methodsList = new ArrayList<String>();
 		constructorList = new ArrayList<String>();
 	}
 	
-	public static MethodFileGenerator getInstance() throws Exception {
+	public static MethodsFileGenerator getInstance() throws Exception {
 		if (instance == null) {
-			instance = new MethodFileGenerator();
+			instance = new MethodsFileGenerator();
 		}
 		return instance;
 	}

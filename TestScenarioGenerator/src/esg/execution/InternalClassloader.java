@@ -1,6 +1,6 @@
 package esg.execution;
 
-import esg.generator.MethodFileGenerator;
+import esg.generator.MethodsFileGenerator;
 import esg.logging.Logger;
 
 import java.io.File;
@@ -45,7 +45,7 @@ public class InternalClassloader {
 				for (File newPath : paths) {
 					urls.add(newPath.toURI().toURL());
 				}
-				classLoader = new URLClassLoader(urls.toArray(new URL[0]), MethodFileGenerator.class.getClassLoader());
+				classLoader = new URLClassLoader(urls.toArray(new URL[0]), MethodsFileGenerator.class.getClassLoader());
 			}
 
 		} catch (MalformedURLException | SecurityException e) {

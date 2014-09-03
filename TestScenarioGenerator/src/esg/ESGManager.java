@@ -1,8 +1,8 @@
 package esg;
 
-import esg.generator.MethodFileGenerator;
-import esg.generator.PureMethodGenerator;
-import esg.generator.TestCaseGenerator;
+import esg.generator.MethodsFileGenerator;
+import esg.generator.PureMethodsGenerator;
+import esg.generator.TestCasesGenerator;
 import esg.logging.Logger;
 
 public class ESGManager {
@@ -18,18 +18,18 @@ public class ESGManager {
 		//TODO controllare ciò che ho passato come args
 		
 		// ========================= CREATE PURE METHODS FILE =========================
-		PureMethodGenerator pureMethodGenerator = PureMethodGenerator.getInstance();
+		PureMethodsGenerator pureMethodGenerator = PureMethodsGenerator.getInstance();
 		pureMethodGenerator.generatePureMethods();
 		pureMethodGenerator.readPureMethods();
 		
 		// ======================= CREATE RANDOOP METHODS FILE ========================
-		MethodFileGenerator methodFileGenerator = MethodFileGenerator.getInstance();
+		MethodsFileGenerator methodFileGenerator = MethodsFileGenerator.getInstance();
 		methodFileGenerator.generateMethods();
 		methodFileGenerator.removePureMethods(pureMethodGenerator.getPureMethods());
 		methodFileGenerator.createMethodsFile();
 		
 		// =============================== RUN RANDOOP ================================
-		TestCaseGenerator testCaseGenerator = TestCaseGenerator.getInstance();
+		TestCasesGenerator testCaseGenerator = TestCasesGenerator.getInstance();
 		testCaseGenerator.generateTestsCase();
 		
 		// ============================== AST TEST CASE ===============================
